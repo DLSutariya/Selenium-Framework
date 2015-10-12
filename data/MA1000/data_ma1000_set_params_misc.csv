@@ -1,0 +1,12 @@
+label,param_name,param_val,value_type,exp_err
+misc-multifinger_timeout-min,misc.multifinger_timeout,1,int32_value,nil
+misc-multifinger_timeout-mid,misc.multifinger_timeout,15,int32_value,nil
+misc-multifinger_timeout-max,misc.multifinger_timeout,30,int32_value,nil
+misc-multifinger_timeout-upper,misc.multifinger_timeout,31,int32_value,Config_invalid_value_error.new
+misc-multifinger_timeout-zero,misc.multifinger_timeout,0,int32_value,Config_invalid_value_error.new
+misc-multifinger_timeout-neg,misc.multifinger_timeout,-1,int32_value,Config_invalid_value_error.new
+misc-receive_state_machine_timeout-min,misc.receive_state_machine_timeout,0,int32_value,nil
+misc-receive_state_machine_timeout-mid,misc.receive_state_machine_timeout,3000,int32_value,nil
+misc-receive_state_machine_timeout-max,misc.receive_state_machine_timeout,6000,int32_value,nil
+misc-receive_state_machine_timeout-upper,misc.receive_state_machine_timeout,6001,int32_value,Config_invalid_value_error.new
+misc-receive_state_machine_timeout-neg,misc.receive_state_machine_timeout,-1,int32_value,Config_invalid_value_error.new

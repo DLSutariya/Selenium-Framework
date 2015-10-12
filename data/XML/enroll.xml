@@ -1,0 +1,23 @@
+<Enroll>
+	<Request>
+	<Identifier>0x21</Identifier>
+		<Values> 
+			<DBIdentifier size="1">0x0</DBIdentifier>
+			<Timeout size="2">5</Timeout>
+			<threshold size="1">0x00</threshold>
+			<EnrolmentType size="1">0x00</EnrolmentType>
+			<Finger size="1">0x01</Finger>
+			<SaveRecord size="1">0x00</SaveRecord>
+			<Minutiae size="1">0x00</Minutiae>			
+	    </Values>			
+	</Request>
+	<Reply>
+		<Identifier>0x21</Identifier>
+			<Length>?</Length>
+			<Values> 
+				<RequestStatus size="1" type="hex">0x00</RequestStatus>
+				<Enroll_status size="1">0</Enroll_status>
+				<User_DB_Index size="4">0xFFFFFFFF</User_DB_Index>					
+			</Values>
+	</Reply>
+</Enroll>

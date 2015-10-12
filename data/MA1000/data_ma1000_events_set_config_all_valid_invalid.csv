@@ -1,0 +1,88 @@
+label,transaction_log_action_code,enable,send_to_controller,clock_n_data_id,trigger_TTL0,trigger_TTL1,exp_err
+duress FIN - enabled,Transaction_log_action_code::Tlac_duress_finger_detected,TRUE,FALSE,1,FALSE,FALSE,nil
+duress FIN - disabled,Transaction_log_action_code::Tlac_duress_finger_detected,FALSE,FALSE,2,FALSE,FALSE,nil
+duress FIN - controller enabled,Transaction_log_action_code::Tlac_duress_finger_detected,FALSE,TRUE,3,FALSE,FALSE,nil
+fake FIN - TTL0 enabled,Transaction_log_action_code::Tlac_fake_finger_detected,FALSE,FALSE,4,TRUE,FALSE,nil
+fake FIN - TTL1 enabled,Transaction_log_action_code::Tlac_fake_finger_detected,FALSE,FALSE,5,FALSE,TRUE,nil
+user control - all enabled,Transaction_log_action_code::Tlac_user_control_successful,TRUE,TRUE,nil,TRUE,TRUE,nil
+user control - all disabled,Transaction_log_action_code::Tlac_user_control_successful,FALSE,FALSE,nil,FALSE,FALSE,nil
+user control - controller disabled,Transaction_log_action_code::Tlac_user_control_successful,TRUE,FALSE,nil,FALSE,FALSE,nil
+bio mismatch - TTL0 disabled,Transaction_log_action_code::Tlac_biometric_mismatch,TRUE,TRUE,10,FALSE,FALSE,nil
+bio mismatch - TTL1 disabled,Transaction_log_action_code::Tlac_biometric_mismatch,TRUE,TRUE,11,FALSE,FALSE,nil
+user id not in db - TTL0 enabled,Transaction_log_action_code::Tlac_user_id_not_in_db,FALSE,FALSE,16,TRUE,FALSE,nil
+user id not in db - TTL1 enabled,Transaction_log_action_code::Tlac_user_id_not_in_db,FALSE,FALSE,17,FALSE,TRUE,nil
+control timed out - all enabled,Transaction_log_action_code::Tlac_control_timed_out,TRUE,TRUE,19,TRUE,TRUE,nil
+control timed out - all disabled,Transaction_log_action_code::Tlac_control_timed_out,FALSE,FALSE,20,FALSE,FALSE,nil
+control timed out - controller disabled,Transaction_log_action_code::Tlac_control_timed_out,FALSE,FALSE,21,FALSE,FALSE,nil
+rejected schedule - TTL0 disabled,Transaction_log_action_code::Tlac_rejected_by_schedule,FALSE,FALSE,22,FALSE,TRUE,Generic_error.new
+rejected schedule - TTL1 disabled,Transaction_log_action_code::Tlac_rejected_by_schedule,FALSE,FALSE,23,TRUE,FALSE,Generic_error.new
+temp validity - enabled,Transaction_log_action_code::Tlac_temp_validity_expired,TRUE,TRUE,25,FALSE,FALSE,nil
+temp validity - disabled,Transaction_log_action_code::Tlac_temp_validity_expired,FALSE,FALSE,26,FALSE,FALSE,nil
+temp validity - controller enabled,Transaction_log_action_code::Tlac_temp_validity_expired,TRUE,TRUE,27,FALSE,FALSE,nil
+user not in whtlst - TTL0 enabled,Transaction_log_action_code::Tlac_user_not_in_white_list,TRUE,TRUE,28,TRUE,FALSE,nil
+user not in whtlst - TTL1 enabled,Transaction_log_action_code::Tlac_user_not_in_white_list,TRUE,TRUE,29,FALSE,TRUE,nil
+black listed - all enabled,Transaction_log_action_code::Tlac_black_listed_card,TRUE,TRUE,31,TRUE,TRUE,nil
+black listed - all disabled,Transaction_log_action_code::Tlac_black_listed_card,FALSE,FALSE,32,FALSE,FALSE,nil
+black listed - controller disabled,Transaction_log_action_code::Tlac_black_listed_card,TRUE,FALSE,33,FALSE,FALSE,nil
+trans log full - enabled,Transaction_log_action_code::Tlac_transaction_log_full,TRUE,FALSE,nil,FALSE,FALSE,nil
+trans log full - disabled,Transaction_log_action_code::Tlac_transaction_log_full,FALSE,FALSE,nil,FALSE,FALSE,nil
+trans log full - controller enabled,Transaction_log_action_code::Tlac_transaction_log_full,FALSE,TRUE,nil,FALSE,FALSE,nil
+controller feedback - TTL0 enabled,Transaction_log_action_code::Tlac_controller_feedback_action,TRUE,TRUE,40,TRUE,FALSE,Invalid_argument_error.new
+controller feedback - TTL1 enabled,Transaction_log_action_code::Tlac_controller_feedback_action,TRUE,TRUE,41,FALSE,TRUE,Invalid_argument_error.new
+door open too long - enabled,Transaction_log_action_code::Tlac_door_opened_for_too_long,TRUE,FALSE,49,TRUE,TRUE,Invalid_argument_error.new
+door open too long - disabled,Transaction_log_action_code::Tlac_door_opened_for_too_long,FALSE,FALSE,50,TRUE,TRUE,Invalid_argument_error.new
+door open too long - controller enabled,Transaction_log_action_code::Tlac_door_opened_for_too_long,FALSE,TRUE,51,TRUE,TRUE,Invalid_argument_error.new
+door forced open - TTL0 enabled,Transaction_log_action_code::Tlac_door_forced_open,FALSE,FALSE,52,TRUE,FALSE,Invalid_argument_error.new
+door forced open - TTL1 enabled,Transaction_log_action_code::Tlac_door_forced_open,FALSE,FALSE,53,FALSE,TRUE,Invalid_argument_error.new
+door closed after alarm - all enabled,Transaction_log_action_code::Tlac_door_closed_after_alarm,TRUE,TRUE,55,TRUE,TRUE,Invalid_argument_error.new
+door closed after alarm - all disabled,Transaction_log_action_code::Tlac_door_closed_after_alarm,FALSE,FALSE,nil,FALSE,FALSE,nil
+door closed after alarm - controller disabled,Transaction_log_action_code::Tlac_door_closed_after_alarm,FALSE,FALSE,nil,FALSE,FALSE,nil
+door unlocked - TTL0 disabled,Transaction_log_action_code::Tlac_door_unlocked,TRUE,TRUE,nil,FALSE,FALSE,nil
+door unlocked - TTL1 disabled,Transaction_log_action_code::Tlac_door_unlocked,TRUE,TRUE,nil,FALSE,FALSE,nil
+door locked back - enabled,Transaction_log_action_code::Tlac_door_locked_back,TRUE,TRUE,nil,FALSE,FALSE,nil
+door locked back - disabled,Transaction_log_action_code::Tlac_door_locked_back,TRUE,FALSE,nil,FALSE,FALSE,nil
+door locked back - controller enabled,Transaction_log_action_code::Tlac_door_locked_back,TRUE,TRUE,nil,FALSE,FALSE,nil
+db deleted - TTL0 disabled,Transaction_log_action_code::Tlac_database_deleted,TRUE,TRUE,70,FALSE,TRUE,Invalid_argument_error.new
+db deleted - TTL1 disabled,Transaction_log_action_code::Tlac_database_deleted,TRUE,TRUE,71,TRUE,FALSE,Invalid_argument_error.new
+enroll completed - enabled,Transaction_log_action_code::Tlac_enrollment_completed,TRUE,FALSE,nil,FALSE,FALSE,nil
+enroll completed - disabled,Transaction_log_action_code::Tlac_enrollment_completed,FALSE,FALSE,nil,FALSE,FALSE,nil
+enroll completed - controller enabled,Transaction_log_action_code::Tlac_enrollment_completed,FALSE,TRUE,75,FALSE,FALSE,Invalid_argument_error.new
+usr deleted - TTL0 enabled,Transaction_log_action_code::Tlac_user_deleted,TRUE,FALSE,76,TRUE,FALSE,Invalid_argument_error.new
+usr deleted - TTL1 enabled,Transaction_log_action_code::Tlac_user_deleted,FALSE,TRUE,77,FALSE,TRUE,Invalid_argument_error.new
+usr modi completed - enabled,Transaction_log_action_code::Tlac_user_modification_completed,TRUE,TRUE,0,FALSE,FALSE,Invalid_argument_error.new
+usr modi completed - disabled,Transaction_log_action_code::Tlac_user_modification_completed,FALSE,FALSE,nil,FALSE,FALSE,nil
+usr modi completed - controller disabled,Transaction_log_action_code::Tlac_user_modification_completed,TRUE,FALSE,nil,FALSE,FALSE,nil
+cls card encoded - TTL0 disabled,Transaction_log_action_code::Tlac_cls_card_encoded,TRUE,TRUE,82,FALSE,TRUE,Invalid_argument_error.new
+cls card encoded - TTL1 disabled,Transaction_log_action_code::Tlac_cls_card_encoded,FALSE,FALSE,83,TRUE,FALSE,Invalid_argument_error.new
+cls card reset - enabled,Transaction_log_action_code::Tlac_cls_card_reset,TRUE,FALSE,85,TRUE,TRUE,Invalid_argument_error.new
+cls card reset - disabled,Transaction_log_action_code::Tlac_cls_card_reset,FALSE,FALSE,86,TRUE,TRUE,Invalid_argument_error.new
+cls card reset - controller enabled,Transaction_log_action_code::Tlac_cls_card_reset,FALSE,TRUE,87,TRUE,TRUE,Invalid_argument_error.new
+settings changed - TTL0 enabled,Transaction_log_action_code::Tlac_settings_changed,TRUE,TRUE,88,TRUE,FALSE,Invalid_argument_error.new
+settings changed - TTL1 enabled,Transaction_log_action_code::Tlac_settings_changed,TRUE,TRUE,89,FALSE,TRUE,Invalid_argument_error.new
+cls card sec key reset - enabled,Transaction_log_action_code::Tlac_cls_card_security_key_reset,TRUE,FALSE,nil,FALSE,FALSE,nil
+cls card sec key reset - disabled,Transaction_log_action_code::Tlac_cls_card_security_key_reset,FALSE,FALSE,nil,FALSE,FALSE,nil
+cls card sec key reset - controller disabled,Transaction_log_action_code::Tlac_cls_card_security_key_reset,FALSE,FALSE,93,FALSE,FALSE,Invalid_argument_error.new
+sec policy changed - TTL0 disabled,Transaction_log_action_code::Tlac_security_policy_changed,FALSE,FALSE,94,FALSE,TRUE,Invalid_argument_error.new
+sec policy changed - TTL1 disabled,Transaction_log_action_code::Tlac_security_policy_changed,FALSE,FALSE,95,TRUE,FALSE,Invalid_argument_error.new
+tamper detected - enabled,Transaction_log_action_code::Tlac_tamper_detected,TRUE,FALSE,97,FALSE,FALSE,nil
+tamper detected - disabled,Transaction_log_action_code::Tlac_tamper_detected,FALSE,FALSE,98,FALSE,FALSE,nil
+tamper detected - controller enabled,Transaction_log_action_code::Tlac_tamper_detected,FALSE,TRUE,99,FALSE,FALSE,nil
+tamper cleared - TTL0 enabled,Transaction_log_action_code::Tlac_tamper_cleared,TRUE,TRUE,100,TRUE,FALSE,Invalid_argument_error.new
+tamper cleared - TTL1 enabled,Transaction_log_action_code::Tlac_tamper_cleared,TRUE,TRUE,101,FALSE,TRUE,Invalid_argument_error.new
+terminal boot cmplted - all enabled,Transaction_log_action_code::Tlac_terminal_boot_completed,TRUE,TRUE,nil,TRUE,TRUE,nil
+terminal boot cmplted - all gpo enabled,Transaction_log_action_code::Tlac_terminal_boot_completed,TRUE,FALSE,nil,TRUE,TRUE,nil
+terminal boot cmplted - all gpo disabled,Transaction_log_action_code::Tlac_terminal_boot_completed,TRUE,FALSE,nil,FALSE,FALSE,nil
+terminal boot cmplted - all disabled,Transaction_log_action_code::Tlac_terminal_boot_completed,FALSE,FALSE,nil,FALSE,FALSE,nil
+terminal boot cmplted - controller disabled,Transaction_log_action_code::Tlac_terminal_boot_completed,TRUE,FALSE,nil,FALSE,FALSE,nil
+fW upgrade - TTL0 disabled,Transaction_log_action_code::Tlac_firmware_upgrade,FALSE,FALSE,106,FALSE,FALSE,Invalid_argument_error.new
+fW upgrade - TTL1 disabled,Transaction_log_action_code::Tlac_firmware_upgrade,FALSE,FALSE,107,FALSE,FALSE,Invalid_argument_error.new
+fW upgrade - enabled,Transaction_log_action_code::Tlac_firmware_upgrade,TRUE,TRUE,nil,FALSE,FALSE,nil
+fW upgrade - disabled,Transaction_log_action_code::Tlac_firmware_upgrade,FALSE,TRUE,nil,FALSE,FALSE,nil
+add user - enabled,Transaction_log_action_code::Tlac_add_user,TRUE,FALSE,109,TRUE,TRUE,Invalid_argument_error.new
+add user - disabled,Transaction_log_action_code::Tlac_add_user,FALSE,FALSE,110,TRUE,TRUE,Invalid_argument_error.new
+add user - controller enabled,Transaction_log_action_code::Tlac_add_user,FALSE,TRUE,111,TRUE,TRUE,Invalid_argument_error.new
+reboot initiated - TTL0 enabled,Transaction_log_action_code::Tlac_reboot_initiated,TRUE,TRUE,112,TRUE,FALSE,Invalid_argument_error.new
+reboot initiated - TTL1 enabled,Transaction_log_action_code::Tlac_reboot_initiated,TRUE,TRUE,113,FALSE,TRUE,Invalid_argument_error.new
+multi user intermediate id - all enabled,Transaction_log_action_code::Tlac_multi_user_intermediate_id,TRUE,TRUE,115,TRUE,TRUE,Invalid_argument_error.new
+multi user intermediate id - all disabled,Transaction_log_action_code::Tlac_multi_user_intermediate_id,FALSE,FALSE,116,FALSE,FALSE,Invalid_argument_error.new
+multi user intermediate id - controller disabled,Transaction_log_action_code::Tlac_multi_user_intermediate_id,FALSE,FALSE,117,FALSE,FALSE,Invalid_argument_error.new

@@ -1,0 +1,33 @@
+<SetTimeMask>
+	<Request>
+	<Identifier>0x42</Identifier>
+		<Values> 
+			<DBIdentifier size="1">0x0</DBIdentifier>
+			<UserILV>
+				<Identifier>0x04</Identifier>
+				<Values>
+					<UserId>0x31</UserId>
+				</Values>	
+			</UserILV>
+			<TimeMask>
+				<Identifier>0x24</Identifier>
+				<Values>
+					<Sunday size="12">0x0</Sunday>
+					<Monday size="12">0x0</Monday>
+					<Tuesday size="12">0x0</Tuesday>
+					<Wednesday size="12">0x0</Wednesday>
+					<Thursday size="12">0x0</Thursday>
+					<Friday size="12">0x0</Friday>
+					<Saturday size="12">0x0</Saturday>					
+				</Values>
+			</TimeMask>						
+	    </Values>			
+	</Request>
+	<Reply>
+		<Identifier>0x42</Identifier>
+			<Length>?</Length>
+			<Values> 
+				<RequestStatus size="1" type="hex">0x00</RequestStatus>										
+			</Values>
+	</Reply>
+</SetTimeMask>

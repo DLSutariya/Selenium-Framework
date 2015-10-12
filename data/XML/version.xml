@@ -1,0 +1,17 @@
+<CMD_GET_VERSION>
+	<Request>
+		<Identifier>0x03</Identifier>
+		<Length>0x0</Length>
+	</Request>
+	<Reply>
+		<Identifier>0x03</Identifier>
+			<Length>17</Length>
+			<Values> 
+				<RequestStatus size="1">0x00</RequestStatus>
+				<SerialNumber size="9" type="str">11041143</SerialNumber>
+				<SoftwareRevision size="4" type="str"></SoftwareRevision>
+				<ExtendedMemory size="1" type="dec">0</ExtendedMemory>
+				<MorphoAccessType size="2" type="dec">520</MorphoAccessType>
+			</Values>
+	</Reply>
+</CMD_GET_VERSION>

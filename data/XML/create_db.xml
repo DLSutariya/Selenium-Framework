@@ -1,0 +1,18 @@
+<CreateDB>
+	<Request>
+	<Identifier>0x30</Identifier>
+		<Values> 
+			<Dbid size="1">0x0</Dbid>
+			<RFU size="1">0x0</RFU>
+            <PersonNumber size="2">3000</PersonNumber>
+            <FingerNumber size="1">2</FingerNumber>			
+		</Values>			
+	</Request>
+	<Reply>
+		<Identifier>0x30</Identifier>
+			<Length>?</Length>
+			<Values> 
+				<RequestStatus size="1" type="hex">0x00</RequestStatus>				
+			</Values>
+	</Reply>
+</CreateDB>

@@ -1,0 +1,31 @@
+===== Start of Run =====
+2015-Oct-12 14:27:52.306: run_tests.rb:202 Ruby Dir 'C:/Ruby193/bin' Version: '1.9.3'
+2015-Oct-12 14:27:52.306: run_tests.rb:203 OS 'mingw32'
+2015-Oct-12 14:27:52.316: run_tests.rb:204 FW Dir: 'D:/Selenium/workspace/Selenium Framework'
+2015-Oct-12 14:27:52.316: run_tests.rb:205 AutomationTool Version: 0.5
+2015-Oct-12 14:27:52.316: run_tests.rb:206 Test Run Mode: SCRIPT FILE
+2015-Oct-12 14:27:52.316: run_tests.rb:207 Output folder: log/20151012/Run_ma1000_general_eth_default_20151012_1427_1
+2015-Oct-12 14:27:52.316: run_tests.rb:210 Parsed communication parameters from command line:
+2015-Oct-12 14:27:52.316: run_tests.rb:211 	Channel      : Ethernet
+2015-Oct-12 14:27:52.316: run_tests.rb:212 	IP Address   : 10.102.3.146
+2015-Oct-12 14:27:52.316: run_tests.rb:213 	TCP Port     : 11010
+2015-Oct-12 14:27:52.326: run_tests.rb:307 Following test scripts from 'script' folder will be processed:
+2015-Oct-12 14:27:52.326: run_tests.rb:308 	 1) MA1000\ma1000_general.rb
+2015-Oct-12 14:27:52.326: test_config.rb:13 Loading configuration file D:/Selenium/workspace/Selenium Framework/config/default.yml
+2015-Oct-12 14:27:52.356: run_tests.rb:378 Default test configuration loaded from file 'config/default.yml'
+2015-Oct-12 14:27:52.356: user_functions.rb:17 Loading user functions from 'user' folder:
+2015-Oct-12 14:27:52.406: user_functions.rb:23 	ma1000_functions.rb
+2015-Oct-12 14:27:52.406: user_functions.rb:23 	support_functions.rb
+
+----- Overall Execution Summary -----
+Test Run Mode   : SCRIPT FILE(ma1000_general_eth_default_20151012_142752)
+Communication   : Ethernet IP = 10.102.3.146; TCP Port = 11010
+Device Info     : Type = N/A; S/N = N/A; F/W = N/A; Sensor = N/A; Reader = N/A
+Assertions      : Total 0 (Pass 0; Fail 0)
+Tests           : Total 0 (Pass 0; Fail 0; Error 0)
+Run Start Time  : 2015-Oct-12 14:27:52.306
+Run End Time    : 2015-Oct-12 14:27:52.426
+Run Duration    : about 120 milliseconds
+Result logs generated at 'log/20151012/Run_ma1000_general_eth_default_20151012_1427_1'
+===== End of Run =====
+

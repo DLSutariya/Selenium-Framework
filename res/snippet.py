@@ -1,0 +1,1 @@
+test_bio_cmd_verify_valid_matching_score_value_with_max

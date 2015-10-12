@@ -1,0 +1,6 @@
+label,ILV_XML_Cmd
+Version CMD,version.xml
+Ping CMD,ping.xml
+Enroll CMD,enroll.xml
+Display Message CMD,display_message.xml
+Ping XML DATA,"<Ping><Request><Identifier>0x8</Identifier></Request><Reply><Identifier>0x08</Identifier><Length>2</Length><Values><RequestStatus size='1'>0</RequestStatus><DataCheck size='1'>0xab</DataCheck></Values></Reply></Ping>"

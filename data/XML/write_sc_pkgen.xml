@@ -1,0 +1,79 @@
+<ILV_CLS_TREATMENT>
+	<Request>
+		<Identifier>0x5F</Identifier>
+		<Values>
+			<Timeout size="2">10</Timeout>
+			<Sub_CMD_Write>
+				<Identifier>0x00</Identifier>
+				<Values>
+					<ContactlessProfile>
+						<Identifier>0x02</Identifier>
+						<Values>
+							<StartBlock>
+								<Identifier>0x0B</Identifier>
+								<Values>
+									<BlockIndex size="1">0x4</BlockIndex>
+								</Values>
+							</StartBlock>
+							<BlockNumber>
+								<Identifier>0x0D</Identifier>
+								<Values>
+									<Blocknumber size="1">0x50</Blocknumber>
+								</Values>
+							</BlockNumber>
+							<SecurityPolicy>
+								<Identifier>0x0C</Identifier>
+								<Values>
+									<UsedKeys size="1">0x2</UsedKeys>
+								</Values>
+							</SecurityPolicy>
+							<Data>
+								<Identifier>0xA5</Identifier>
+								<Values>
+									<ID_TAG>
+								      <Identifier>0x32</Identifier>
+								      <Values>
+								      	<Id type="str">123456789</Id>
+									  </Values>
+									</ID_TAG>
+									<Name>
+								      <Identifier>0x20</Identifier>
+								      <Values>
+								      	<User type="str">TestUser</User>
+									  </Values>
+									</Name>									
+									<BioTemp>
+								      <Identifier>0x08</Identifier>
+								      <Values>								      	
+									  </Values>
+									</BioTemp>									
+								</Values>
+							</Data>
+						</Values>
+					</ContactlessProfile>
+				</Values>
+			</Sub_CMD_Write>
+		</Values>
+	</Request>
+	<Reply>
+		<Identifier>0x5F</Identifier>
+		<Length>?</Length>
+		<Values>
+			<GlobalReturnStatus>0x00</GlobalReturnStatus>
+			<Sub_CMD_Write>
+				<Identifier>0x00</Identifier>
+				<Length>?</Length>
+				<Values>
+					<ReturnStatus>0x00</ReturnStatus>
+					<ContactlessProfile>
+						<Identifier>0x02</Identifier>
+						<Length>?</Length>
+						<Values>
+							<ReturnStatus>0x00</ReturnStatus>
+						</Values>
+					</ContactlessProfile>
+				</Values>
+			</Sub_CMD_Write>
+		</Values>
+	</Reply>
+</ILV_CLS_TREATMENT>

@@ -1,0 +1,81 @@
+label,val_usr_id,val_nm,val_fnm,val_temp,val_fstfinql,val_sndfinql,val_thrdfinql,val_fstfinnb,val_sndfinnb,val_trdfinnb,val_durfin,val_schnb,val_pincod,val_user_card_sn,val_flgholsch,val_relydur,val_expdt,val_usraccrul,val_flgwhitelst,val_legtimemsk,val_legextid,val_vip_flag,exp_err
+db-valid_user189,1,testuser1,admin,3,10,10,10,1,2,3,2,15,380013,12345,TRUE,0,31-12-2013 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,0,0,FALSE,nil
+db-valid_user2,user1,testuser1,admin,2,80,90,100,5,6,0,1,1,370008,123456,TRUE,3600,01-12-2035 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,0,0,FALSE,nil
+db-valid_user2_max,user012345789,testuser0123456789,admin0123456789,1,50,50,50,4,0,0,3,10,PZAX363642MN123,7945646,TRUE,10,31-12-2030 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,TRUE,nil
+db-invalid_user123_nam_upper,user123,testuser123456789123456789132415464879012,admin0123456789,3,50,50,50,4,5,6,3,10,PZAX363642MN123,465445,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,"Invalid_argument_error.new	 "
+db-invalid_user124_fnam_upper,user124,testuser124,admin012345678901234567891,3,50,50,50,4,5,6,3,10,PZAX363642MN123,9.87E+12,TRUE,10,31-12-2015 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,TRUE," Invalid_argument_error.new	 "
+db-invalid_user125_usercsn,user125,testuser125,admin125,3,101,50,50,4,5,6,3,10,PZAX363642MN123,445584132846465ABCDEFXYZ,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,"  Invalid_argument_error.new	 "
+db-valid_user126_no_temp_with_all_finger,user126,testuser126,admin126,0,55,150,50,4,5,6,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,nil
+db-invalid_user127_one_temp_without_first_scnd_fing,user127,testuser127,admin127,1,55,55,250,11,5,11,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2028 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,"  Invalid_argument_error.new	 "
+db-invalid_user127_two_temp_without_scndfing,user127,testuser127,admin127,2,55,55,250,4,11,6,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2028 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,  Invalid_argument_error.new
+db-invalid_user127_three_temp_without_thirdfing,user127,testuser127,admin127,3,55,55,250,4,5,11,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2028 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,"Invalid_argument_error.new		 "
+db-invalid_user128_fstfinnb,user128,testuser128,admin128,3,55,55,50,11,5,6,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,  Invalid_argument_error.new
+db-invalid_user129_sndfinnb,user129,testuser129,admin129,3,55,55,50,4,11,6,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE, Invalid_argument_error.new
+db-invalid_user130_thrdfinnb,user130,testuser130,admin130,3,55,55,50,4,5,11,3,10,PZAX363642MN123,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new
+db-invalid_user131_durfin,user131,testuser131,admin131,3,55,55,50,4,5,6,4,10,PZAX363642MN123,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new
+db-invalid_user132_schnb,user132,testuser132,admin132,3,55,55,50,4,5,6,3,64,PZAX363642MN123,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new
+db-invalid_user133_pincod,user133,testuser133,admin133,3,55,55,50,4,5,6,3,15,999999999999999999,1234564,TRUE,10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new
+db-invalid_user136_rlydur,user136,testuser136,admin136,3,55,55,50,4,5,6,3,15,PZAX363642MN123,1234564,TRUE,-10,31-12-2025 00:00,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new
+db-invalid_user137_expdt_year,user137,testuser137,admin137,3,55,55,50,4,5,6,3,15,PZAX363642MN123,1234564,TRUE,10,30001/12/31 0:0:0,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new
+db-invalid_user138_expdt_month,user138,testuser138,admin138,3,55,55,50,4,5,6,3,15,PZAX363642MN123,1234564,TRUE,10,2035/112/31 0:0:0,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE, Invalid_argument_error.new
+db-invalid_user139_expdt_day,user139,testuser139,admin139,3,55,55,50,4,5,6,3,15,PZAX363642MN123,1234564,TRUE,10,2035/12/32 0:0:0,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",FALSE,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,ABCDEFGHIJKLMNOPQRSTUVWXYZ012345789,FALSE,Invalid_argument_error.new

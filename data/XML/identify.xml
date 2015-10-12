@@ -1,0 +1,20 @@
+<Enroll>
+	<Request>
+	<Identifier>0x22</Identifier>
+		<Values> 
+			<DBIdentifier size="1">0x0</DBIdentifier>
+			<Timeout size="2">5</Timeout>
+			<threshold size="2">0x00</threshold>
+			<RFU size="1">0x00</RFU>			
+	    </Values>			
+	</Request>
+	<Reply>
+		<Identifier>0x22</Identifier>
+			<Length>?</Length>
+			<Values> 
+				<RequestStatus size="1" type="hex">0x00</RequestStatus>
+				<MatchingResult size="1">1</MatchingResult>
+				<User_DB_Index size="4">0x0</User_DB_Index>					
+			</Values>
+	</Reply>
+</Enroll>

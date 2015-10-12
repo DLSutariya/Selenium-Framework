@@ -1,0 +1,27 @@
+<GetDBAllConfig>
+	<Request>
+		<Identifier>0x31</Identifier>
+	</Request>
+
+	<Reply>
+    	<Identifier>0x31</Identifier>
+        <Length>?</Length>
+        <Values>
+        	<RequestStatus>#0x00</RequestStatus>
+           	<NumbBase size='1'>0x1</NumbBase>
+            <Base>
+            	<Identifier>#0x1F</Identifier>
+                <Length>?</Length>
+                <Values>
+                	<DBid size='1'>0x0</DBid>
+                    <BaseValid size='1'>0x1</BaseValid>
+                    <NBFinger size='1'>0x2</NBFinger>
+                    <MaxRecords size='4' type='dec'>3000</MaxRecords>
+                    <CurrentRecord size='4'>100</CurrentRecord>
+                    <FreeRecord size='4' type='dec'>2900</FreeRecord>
+                    <NoOfFields size='1'>1</NoOfFields>
+				</Values>
+			</Base>
+		</Values>
+	</Reply>
+</GetDBAllConfig>

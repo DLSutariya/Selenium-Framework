@@ -1,0 +1,18 @@
+<Verify>
+	<Request>
+	<Identifier>0x20</Identifier>
+		<Values> 
+			<Timeout size="2">10</Timeout>
+			<MatchingThreshold size="2">0x05</MatchingThreshold>
+			<AcquisitionQualityThreshold size="1">0x00</AcquisitionQualityThreshold>			
+		</Values>			
+	</Request>
+	<Reply>
+		<Identifier>0x20</Identifier>
+			<Length>?</Length>
+			<Values> 
+				<RequestStatus size="1" type="hex">0x00</RequestStatus>
+				<MatchingResult size="1">1</MatchingResult>				
+			</Values>
+	</Reply>
+</Verify>

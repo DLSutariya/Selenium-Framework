@@ -1,0 +1,10 @@
+
+Summary-
+Test Run Mode  ,SCRIPT FILE(ma1000_general_eth_default_20151012_142752)
+Communication  ,Ethernet IP = 10.102.3.146; TCP Port = 11010
+Device Info    ,Type = N/A; S/N = N/A; F/W = N/A; Sensor = N/A; Reader = N/A
+Assertions     ,Total 0 (Pass 0; Fail 0)
+Tests          ,Total 0 (Pass 0; Fail 0; Error 0)
+Run Start Time ,2015-Oct-12 14:27:52.306
+Run End Time   ,2015-Oct-12 14:27:52.426
+Run Duration   ,about 120 milliseconds

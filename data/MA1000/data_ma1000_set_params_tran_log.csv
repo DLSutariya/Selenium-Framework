@@ -1,0 +1,16 @@
+label,param_name,param_val,value_type,exp_err
+tran_log-logging-min,transaction_log.logging,0,int32_value,nil
+tran_log-logging-mid,transaction_log.logging,1,int32_value,nil
+tran_log-logging-max,transaction_log.logging,2,int32_value,nil
+tran_log-logging-upper,transaction_log.logging,3,int32_value,Config_invalid_value_error.new
+tran_log-logging-neg,transaction_log.logging,-1,int32_value,Config_invalid_value_error.new
+tran_log-action_erase_log-min,transaction_log.action_erase_log,0,int32_value,nil
+tran_log-action_erase_log-max,transaction_log.action_erase_log,1,int32_value,nil
+tran_log-action_erase_log-upper,transaction_log.action_erase_log,2,int32_value,Config_invalid_value_error.new
+tran_log-action_erase_log-neg,transaction_log.action_erase_log,-1,int32_value,Config_invalid_value_error.new
+tran_log-action_num_erase_log-min,transaction_log.action_num_erase_log,1,int32_value,nil
+tran_log-action_num_erase_log-mid,transaction_log.action_num_erase_log,50000,int32_value,nil
+tran_log-action_num_erase_log-max,transaction_log.action_num_erase_log,100000,int32_value,nil
+tran_log-action_num_erase_log-upper,transaction_log.action_num_erase_log,100001,int32_value,Config_invalid_value_error.new
+tran_log-action_num_erase_log-zero,transaction_log.action_num_erase_log,0,int32_value,nil
+tran_log-action_num_erase_log-neg,transaction_log.action_num_erase_log,-1,int32_value,Config_invalid_value_error.new

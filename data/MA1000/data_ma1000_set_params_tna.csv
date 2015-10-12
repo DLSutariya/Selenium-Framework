@@ -1,0 +1,13 @@
+label,param_name,param_val,value_type,exp_err
+tna-tna_mode-min,time_and_attendance.tna_mode,0,int32_value,nil
+tna-tna_mode-mid,time_and_attendance.tna_mode,1,int32_value,nil
+tna-tna_mode-upper,time_and_attendance.tna_mode,2,int32_value,Config_invalid_value_error.new
+tna-tna_mode-neg,time_and_attendance.tna_mode,-1,int32_value,Config_invalid_value_error.new
+tna-tna_mandatory_mode-min,time_and_attendance.tna_mandatory_mode,0,int32_value,nil
+tna-tna_mandatory_mode-max,time_and_attendance.tna_mandatory_mode,1,int32_value,nil
+tna-tna_mandatory_mode-upper,time_and_attendance.tna_mandatory_mode,2,int32_value,Config_invalid_value_error.new
+tna-tna_mandatory_mode-neg,time_and_attendance.tna_mandatory_mode,-1,int32_value,Config_invalid_value_error.new
+tna-tna_user_control-min,time_and_attendance.tna_user_control,0,int32_value,nil
+tna-tna_user_control-max,time_and_attendance.tna_user_control,1,int32_value,nil
+tna-tna_user_control-upper,time_and_attendance.tna_user_control,2,int32_value,Config_invalid_value_error.new
+tna-tna_user_control-neg,time_and_attendance.tna_user_control,-1,int32_value,Config_invalid_value_error.new

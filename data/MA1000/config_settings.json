@@ -1,0 +1,3447 @@
+{
+    "tamper":
+    {
+        "state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "action_auth_iden":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "action_play_mmi":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "action_erase_biometrics":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "action_erase_security_data":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "alarm_interval":
+        {
+            "value": "1500",
+            "default_value": "1500",
+            "range": "0:3000",
+            "data_type": "1"
+        },
+        "status":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        }
+    },
+    "NTP_server":
+    {
+        "primary_ip_address":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "15",
+            "data_type": "6"
+        },
+        "secondary_ip_address":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "15",
+            "data_type": "6"
+        }
+    },
+    "gpio":
+    {
+        "func_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "sdac_relay_default_state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "sdac_door_unlock_dur":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "2:60",
+            "data_type": "1"
+        },
+        "sdac_max_door_held_open_dur":
+        {
+            "value": "25",
+            "default_value": "25",
+            "range": "1:3600",
+            "data_type": "1"
+        },
+        "sdac_rte_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "sdac_rte_egress_timeout":
+        {
+            "value": "25",
+            "default_value": "25",
+            "range": "1:300",
+            "data_type": "1"
+        },
+        "sdac_push_btn_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "tom_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "tom_duration":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1:1440",
+            "data_type": "1"
+        },
+        "gpo0_default_state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "gpo1_default_state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "gpo2_default_state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "gpo_table_gpo_0":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:8190",
+            "data_type": "1"
+        },
+        "gpo_table_gpo_1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:8190",
+            "data_type": "1"
+        },
+        "gpo_table_gpo_0_and_1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:8190",
+            "data_type": "1"
+        },
+        "gpo_table_gpo_2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "gpi_table_gpi_0":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,4,5,6",
+            "data_type": "1"
+        },
+        "gpi_table_gpi_1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,4,5,6",
+            "data_type": "1"
+        },
+        "gpi_table_gpi_2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "gpo_0_duration":
+        {
+            "value": "600",
+            "default_value": "600",
+            "range": "0:16383",
+            "data_type": "1"
+        },
+        "gpo_1_duration":
+        {
+            "value": "600",
+            "default_value": "600",
+            "range": "0:16383",
+            "data_type": "1"
+        },
+        "gpo_2_duration":
+        {
+            "value": "600",
+            "default_value": "600",
+            "range": "600",
+            "data_type": "1"
+        },
+        "gpi_duration":
+        {
+            "value": "200",
+            "default_value": "200",
+            "range": "0:16383",
+            "data_type": "1"
+        },
+        "gpi_active_level":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "threat_level_mode":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "cmd_based_active_threat_level":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:3",
+            "data_type": "1"
+        },
+        "access_rule_priority_1":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "access_rule_priority_2":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "door_open_schedule":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "threat_level_gpi_0":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:3",
+            "data_type": "1"
+        },
+        "threat_level_gpi_1":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:3",
+            "data_type": "1"
+        },
+        "threat_level_gpi_2":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "0:3",
+            "data_type": "1"
+        },
+        "threat_level_gpi_3":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "0:3",
+            "data_type": "1"
+        }
+    },
+    "access_schedule":
+    {
+        "settings_offset":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:14",
+            "data_type": "1"
+        },
+        "data":
+        {
+            "value": "/w==",
+            "default_value": "/w==",
+            "range": "1736",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "names":
+        {
+            "value": "Tm8gQWNjZXNzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAxMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDEzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAxNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMTUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDE2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAxNwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMTgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDE5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDIyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDI1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMjcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDI4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDMxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAzMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAzNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDM3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAzOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA0MQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA0NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNDUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQ2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA0NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQ5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNTEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDUyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1MwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1NgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNTcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDU4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDYxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA2MgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQWxsIEFjY2VzcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+            "default_value": "Tm8gQWNjZXNzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAxMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDEzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAxNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMTUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDE2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAxNwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMTgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDE5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMjEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDIyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDI1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMjcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDI4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAyOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDMxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAzMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAzNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDM3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSAzOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgMzkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA0MQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA0NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNDUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQ2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA0NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDQ5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNTEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDUyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1MwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1NgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNTcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDU4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA1OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU2NoZWR1bGUgNjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFNjaGVkdWxlIDYxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTY2hlZHVsZSA2MgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQWxsIEFjY2VzcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+            "range": "2560",
+            "data_type": "5"
+        }
+    },
+    "holiday_schedule":
+    {
+        "L1_data":
+        {
+            "value": "/w==",
+            "default_value": "/w==",
+            "range": "400",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "L1_names":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "1840",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "MA5G_data":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "512",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "MA5G_names":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "2560",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        }
+    },
+    "biometric_schedule":
+    {
+        "data":
+        {
+            "value": "/w==",
+            "default_value": "/w==",
+            "range": "140",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        }
+    },
+    "misc":
+    {
+        "real_time_mon":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "display_clock_type":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "0,2",
+            "data_type": "1"
+        },
+        "LCD_administration":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "LCD_login_option":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "language_file_name":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "multifinger_timeout":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "1:30",
+            "data_type": "1"
+        },
+        "receive_state_machine_timeout":
+        {
+            "value": "3000",
+            "default_value": "3000",
+            "range": "0:6000",
+            "data_type": "1"
+        }
+    },
+    "date_time_settings":
+    {
+        "24_hour_format":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "observe_daylight_savings":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "time_format":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "date_format":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:4",
+            "data_type": "1"
+        },
+        "predefined_zone":
+        {
+            "value": "Europe/Paris",
+            "default_value": "Europe/Paris",
+            "range": "256",
+            "data_type": "6"
+        },
+        "gmt_differential":
+        {
+            "value": "4",
+            "default_value": "4",
+            "range": "-48:52",
+            "data_type": "0"
+        },
+        "end_time":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "0:23",
+            "data_type": "1"
+        },
+        "start_time":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "0:23",
+            "data_type": "1"
+        },
+        "local_or_ut":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "start_month":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "1:12",
+            "data_type": "1"
+        },
+        "start_wday":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:6",
+            "data_type": "1"
+        },
+        "start_week":
+        {
+            "value": "5",
+            "default_value": "5",
+            "range": "1:5",
+            "data_type": "1"
+        },
+        "end_month":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "1:12",
+            "data_type": "1"
+        },
+        "end_wday":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:6",
+            "data_type": "1"
+        },
+        "end_week":
+        {
+            "value": "5",
+            "default_value": "5",
+            "range": "1:5",
+            "data_type": "1"
+        }
+    },
+    "ip_restraining":
+    {
+        "mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "ip_v4_list":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "400",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "ip_v4_range":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "800",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "ip_v6_list":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "1600",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        },
+        "ip_v6_range":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "3200",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        }
+    },
+    "wiegand":
+    {
+        "external_port_input_format":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "1"
+        },
+        "prox_port_input_format":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "1"
+        },
+        "external_port_output_format":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "1"
+        },
+        "pulse_width":
+        {
+            "value": "60",
+            "default_value": "60",
+            "range": "20:100",
+            "data_type": "1"
+        },
+        "pulse_interval":
+        {
+            "value": "2000",
+            "default_value": "2000",
+            "range": "200:20000",
+            "data_type": "1"
+        },
+        "custom_format_slot0":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot1":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot2":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot3":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot4":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot5":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot6":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_slot7":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "custom_format_tamper":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "81888",
+            "data_type": "5"
+        },
+        "event_duress_finger":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,10,11,12,13,14,15,16,17",
+            "data_type": "1"
+        },
+        "event_verify_pass":
+        {
+            "value": "-1",
+            "default_value": "-1",
+            "range": "-1,0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "0"
+        },
+        "event_verify_fail":
+        {
+            "value": "-1",
+            "default_value": "-1",
+            "range": "-1,0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "0"
+        },
+        "event_identify_pass":
+        {
+            "value": "-1",
+            "default_value": "-1",
+            "range": "-1,0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "0"
+        },
+        "event_identify_fail":
+        {
+            "value": "-1",
+            "default_value": "-1",
+            "range": "-1,0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "0"
+        },
+        "event_tamper":
+        {
+            "value":"1",
+            "default_value":"1",
+            "range": "0,1,10,11,12,13,14,15,16,17",
+            "data_type": "1"
+        },
+        "external_port_output_status":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,-1",
+            "data_type": "0"
+        },
+        "external_port_input_type":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "external_port_output_type":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "site_code_checking":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "wiegand_protocol":
+    {
+       "output_byte_order":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "clock_and_data_protocol":
+    {
+        "input_clock_line_level":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "input_data_line_level":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "output_clock_line_level":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "output_data_line_level":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "card_present_signal_status":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "aux_port":
+    {
+        "verify_port":
+        {
+            "value": "-1",
+            "default_value": "-1",
+            "range": "2,1,-1",
+            "data_type": "0"
+        },
+        "password":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:4294967296",
+            "data_type": "1"
+        }
+    },
+    "rs485":
+    {
+        "verify_port":
+        {
+            "value": "-1",
+            "default_value": "-1",
+            "range": "2,1,-1",
+            "data_type": "0"
+        }
+    },
+    "ipnetwork":
+    {
+        "host_name":
+        {
+            "value": "MAsigma-lite-plus",
+            "default_value": "MAsigma-lite-plus",
+            "range": "64",
+            "data_type": "6"
+        }
+    },
+    "ipnetwork_ethernet":
+    {
+        "is_dhcp_ipv4":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "ip_addr_ipv4":
+        {
+            "value": "192.168.1.1",
+            "default_value": "192.168.1.1",
+            "range": "15",
+            "data_type": "6"
+        },
+        "net_mask_ipv4":
+        {
+            "value": "255.255.255.0",
+            "default_value": "255.255.255.0",
+            "range": "15",
+            "data_type": "6"
+        },
+        "gateway_ipv4":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "15",
+            "data_type": "6"
+        },
+        "is_dhcp_ipv6":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "ip_addr_ipv6":
+        {
+            "value": "fe80::894c:bd17:c081:1234",
+            "default_value": "fe80::894c:bd17:c081:1234",
+            "range": "40",
+            "data_type": "6"
+        },
+        "prefix_len_ipv6":
+        {
+            "value": "12",
+            "default_value": "12",
+            "range": "0:128",
+            "data_type": "1"
+        },
+        "gateway_ipv6":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "40",
+            "data_type": "6"
+        }
+    },
+    "ipnetwork_wlan":
+    {
+        "mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "is_dhcp_ipv4":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "ip_addr_ipv4":
+        {
+            "value": "192.168.2.2",
+            "default_value": "192.168.2.2",
+            "range": "15",
+            "data_type": "6"
+        },
+        "net_mask_ipv4":
+        {
+            "value": "255.255.255.0",
+            "default_value": "255.255.255.0",
+            "range": "15",
+            "data_type": "6"
+        },
+        "gateway_ipv4":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "15",
+            "data_type": "6"
+        },
+        "is_dhcp_ipv6":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "ip_addr_ipv6":
+        {
+            "value": "fe80::894c:bd17:c081:4321",
+            "default_value": "fe80::894c:bd17:c081:4321",
+            "range": "40",
+            "data_type": "6"
+        },
+        "prefix_len_ipv6":
+        {
+            "value": "12",
+            "default_value": "12",
+            "range": "0:128",
+            "data_type": "1"
+        },
+        "gateway_ipv6":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "40",
+            "data_type": "6"
+        }
+    },
+    "time_and_attendance":
+    {
+        "tna_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "tna_extended_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "tna_mandatory_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "tna_user_control":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "tna_message_timeout":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "3",
+            "data_type": "1"
+        },
+        "message_text_mode":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1",
+            "data_type": "1"
+        },
+        "f1_key_message_text":
+        {
+            "value": "IN",
+            "default_value": "IN",
+            "range": "40",
+            "data_type": "6"
+        },
+        "f2_key_message_text":
+        {
+            "value": "OUT",
+            "default_value": "OUT",
+            "range": "40",
+            "data_type": "6"
+        },
+        "f3_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "f4_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f1_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f2_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f3_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f4_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f5_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f6_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f7_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f8_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f9_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f10_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f11_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f12_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f13_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f14_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f15_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "ext_f16_key_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "f_key_group_1_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "f_key_group_2_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "f_key_group_3_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "f_key_group_4_message_text":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "0",
+            "data_type": "6"
+        },
+        "key_select_timeout":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "3:60",
+            "data_type": "1"
+        },
+        "active_key_timeout":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "3:60",
+            "data_type": "1"
+        }
+    },
+    "dynamic_message":
+    {
+        "mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "timeout":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "3",
+            "data_type": "1"
+        }
+    },
+    "terminal_information":
+    {
+        "desc_name":
+        {
+            "value": "MORPHOACCESS",
+            "default_value": "MORPHOACCESS",
+            "range": "192",
+            "data_type": "6"
+        },
+        "protocol_mode":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "protocol_change":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "contact_info":
+    {
+        "web":
+        {
+            "value": "http://www.biometric-terminals.com",
+            "default_value": "http://www.biometric-terminals.com",
+            "range": "100",
+            "data_type": "6"
+        },
+        "hotline_mail":
+        {
+            "value": "hotline.biometrics@morpho.com",
+            "default_value": "hotline.biometrics@morpho.com",
+            "range": "100",
+            "data_type": "6"
+        },
+        "hotline_number":
+        {
+            "value": "33 (0) 1 58 11 39 19",
+            "default_value": "33 (0) 1 58 11 39 19",
+            "range": "100",
+            "data_type": "6"
+        },
+        "HO_address":
+        {
+            "value": "11, boulevard Gallieni - 92130 Issy-les-Moulineaux - FRANCE",
+            "default_value": "11, boulevard Gallieni - 92130 Issy-les-Moulineaux - FRANCE",
+            "range": "150",
+            "data_type": "6"
+        }
+    },
+    "jobcode":
+    {
+        "activate":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "timeout":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "10",
+            "data_type": "1"
+        },
+        "jobcode_per_list":
+        {
+            "value": "512",
+            "default_value": "512",
+            "range": "1:512",
+            "data_type": "1"
+        },
+        "jobcode_list_count":
+        {
+            "value": "128",
+            "default_value": "128",
+            "range": "1:128",
+            "data_type": "1"
+        }
+    },
+    "transaction_log":
+    {
+        "logging":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "action_erase_log":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "action_num_erase_log":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:100000",
+            "data_type": "1"
+        }
+    },
+    "error_log":
+    {
+        "enabled":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "logging_mode":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "debug_level":
+        {
+            "value": "7",
+            "default_value": "7",
+            "range": "0:10",
+            "data_type": "1"
+        },
+        "ip_addr":
+        {
+            "value": "0.0.0.0",
+            "default_value": "0.0.0.0",
+            "range": "16",
+            "data_type": "6"
+        },
+        "port":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:65535",
+            "data_type": "1"
+        }
+    },
+    "audio":
+    {
+        "volume":
+        {
+            "value": "50",
+            "default_value": "50",
+            "range": "0:100",
+            "data_type": "1"
+        },
+        "permission_verify_success":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "permission_verify_fail":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "permission_message_attention":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "permission_tamper":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        }
+    },
+    "comm_channels_state":
+    {
+        "TCP":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "web_server":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "serial":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "USB_slave":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0",
+            "data_type": "1"
+        },
+        "USB_script":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "serial_communication":
+    {
+        "protocol_baud_rate":
+        {
+            "value": "115200",
+            "default_value": "115200",
+            "range": "9600,19200,38400,57600,115200",
+            "data_type": "1"
+        },
+        "protocol_stop_bit":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1,1.5,2",
+            "data_type": "1"
+        },
+        "protocol_parity":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "protocol_char_size":
+        {
+            "value": "8",
+            "default_value": "8",
+            "range": "7:8",
+            "data_type": "1"
+        },
+        "comm_system":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "net_id":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:65534",
+            "data_type": "1"
+        }
+    },
+    "bio_security_settings":
+    {
+        "matching_threshold":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "1:10",
+            "data_type": "1"
+        },
+        "ffd_security_level":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:3",
+            "data_type": "1"
+        },
+        "fvp_multimodal_security_level":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        }
+    },
+    "controller_feedback":
+    {
+        "panel_mode":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "feedback_lines":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "panel_timeout":
+        {
+            "value": "3000",
+            "default_value": "3000",
+            "range": "1000:5000",
+            "data_type": "1"
+        },
+        "granted_pulse_width":
+        {
+            "value": "100",
+            "default_value": "100",
+            "range": "0,1,50:1000",
+            "data_type": "1"
+        },
+        "granted_pulse_interval":
+        {
+            "value": "100",
+            "default_value": "100",
+            "range": "0,1,50:1000",
+            "data_type": "1"
+        },
+        "denied_pulse_width":
+        {
+            "value": "200",
+            "default_value": "200",
+            "range": "-1,0,1,50:1000",
+            "data_type": "0"
+        },
+        "denied_pulse_interval":
+        {
+            "value": "200",
+            "default_value": "200",
+            "range": "-1,0,1,50:1000",
+            "data_type": "0"
+        },
+        "PIN_pulse_width":
+        {
+            "value": "300",
+            "default_value": "300",
+            "range": "0,1,50:1000",
+            "data_type": "1"
+        },
+        "PIN_pulse_interval":
+        {
+            "value": "300",
+            "default_value": "300",
+            "range": "0,1,50:1000",
+            "data_type": "1"
+        },
+        "timeout_as_reject":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0,1",
+            "data_type": "1"
+        },
+        "keypad_passthru_mode":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "keypad_passthru_timeout":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "5:16",
+            "data_type": "1"
+        },
+        "pre_check_panel_state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "auth_param":
+    {
+        "additional_pin_check_nb_attempt":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "additional_pin_check_timeout":
+        {
+            "value": "10",
+            "default_value": "10",
+            "range": "3:15",
+            "data_type": "1"
+        },
+        "additional_bio_check_nb_attempt":
+        {
+            "value": "2",
+            "default_value": "2",
+            "range": "1,2",
+            "data_type": "1"
+        },
+        "additional_bio_check_timeout":
+        {
+            "value": "5",
+            "default_value": "5",
+            "range": "2:60",
+            "data_type": "1"
+        },
+        "bio_policy_on_security_level_none":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "timed_anti_passback_same_user_timeout":
+        {
+            "value": "5",
+            "default_value": "5",
+            "range": "1:300",
+            "data_type": "1"
+        },
+		"l1_templates_threshold":
+		{
+			"value": "0",
+			"default_value": "0",
+			"range": "0",
+			"data_type": "1"
+		}        
+    },
+    "identify_param":
+    {
+	    "stats_sync_duration":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1",
+            "data_type": "1"
+        }
+    },
+    "enroll":
+    {
+        "acquisition_threshold":
+        {
+            "value": "60",
+            "default_value": "60",
+            "range": "20:100",
+            "data_type": "1"
+        }
+    },
+    "first_boot":
+    {
+        "storage_type":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        }
+    },
+    "flash_block":
+    {
+        "data":
+        {
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "2048",
+            "data_type": "5",
+            "repeat_default_value": "1"
+        }
+    },
+    "sc_l1_desfire":
+    {
+        "fid":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "aid":
+        {
+            "value": "15656448",
+            "default_value": "15656448",
+            "range": "0:16777215",
+            "data_type": "1"
+        },
+        "file_size":
+        {
+            "value": "500",
+            "default_value": "500",
+            "range": "0:16777215",
+            "data_type": "1"
+        }
+    },
+    "sc_tlv_desfire":
+    {
+        "fid":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "aid":
+        {
+                "value": "4344143",
+                "default_value": "4344143",
+                "range": "0:16777215",
+                "data_type": "1"
+        },
+        "file_size":
+        {
+                "value": "111",
+                "default_value": "0",
+                "range": "0:16777215",
+                "data_type": "1"
+        }
+    },
+    "sc_l1_iclass":
+    {
+        "page_offset":
+        {
+                "value": "19",
+                "default_value": "19",
+                "range": "0:255",
+                "data_type": "1"
+        },
+        "page_layout":
+        {
+                "value": "8421418",
+                "default_value": "8421418",
+                "range": "0:16777215",
+                "data_type": "1"
+        },
+        "book_number":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0:16777215",
+                "data_type": "1"
+        }
+    },
+    "sc_tlv_iclass":
+    {
+        "page_offset":
+        {
+                "value": "19",
+                "default_value": "19",
+                "range": "0:255",
+                "data_type": "1"
+        },
+        "page_layout":
+        {
+                "value": "1",
+                "default_value": "1",
+                "range": "1:5",
+                "data_type": "1"
+        },
+        "book_number":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0:16777215",
+                "data_type": "1"
+        },
+        "num_block":
+        {
+                "value": "128",
+                "default_value": "128",
+                "range": "0:255",
+                "data_type": "1"
+        }
+    },
+    "sc_l1_mifare":
+    {
+        "kb_number":
+        {
+                "value": "4",
+                "default_value": "4",
+                "range": "1:4",
+                "data_type": "1"
+        },
+        "start_block":
+        {
+                "value": "26",
+                "default_value": "26",
+                "range": "4:215",
+                "data_type": "1"
+        },
+        "num_block":
+        {
+                "value": "1",
+                "default_value": "1",
+                "range": "0:216",
+                "data_type": "1"
+        },
+        "key_policy":
+        {
+                "value": "1",
+                "default_value": "1",
+                "range": "1:3",
+                "data_type": "1"
+        },
+        "4k_layout":
+        {
+				"value": "G220kkkhJJJJNJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ",
+				"default_value": "G220kkkhJJJJNJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ",
+				"range": "84",
+				"data_type": "5"
+        },
+        "using_layout":
+        {
+				"value": "0",
+				"default_value": "0",
+				"range": "1",
+				"data_type": "1"
+		}
+    },
+    "sc_tlv_mifare":
+    {
+        "kb_number":
+        {
+                "value": "1",
+                "default_value": "1",
+                "range": "1:4",
+                "data_type": "1"
+        },
+        "start_block":
+        {
+                "value": "4",
+                "default_value": "4",
+                "range": "4:215",
+                "data_type": "1"
+        },
+        "num_block":
+        {
+                "value": "31",
+                "default_value": "31",
+                "range": "0:216",
+                "data_type": "1"
+        },
+        "key_policy":
+        {
+                "value": "1",
+                "default_value": "1",
+                "range": "1:3",
+                "data_type": "1"
+        }
+    },
+    "sc_tlv_mifare_plus":
+    {
+        "start_block":
+        {
+                "value": "4",
+                "default_value": "4",
+                "range": "4:215",
+                "data_type": "1"
+        },
+        "num_block":
+        {
+                "value": "31",
+                "default_value": "31",
+                "range": "0:216",
+                "data_type": "1"
+        },
+        "key_policy":
+        {
+                "value": "1",
+                "default_value": "1",
+                "range": "1:3",
+                "data_type": "1"
+        }
+    },
+    "sc":
+    {
+        "encode_timeout":
+    	{
+    		"value": "3",
+			"default_value": "3",
+			"range": "3:15",
+			"data_type": "1"    		
+    	},
+    	"read_profile":
+    	{
+    		"value": "67",
+			"default_value": "67",
+			"range": "0:255",
+			"data_type": "1"
+    	},
+    	"encode_profile":
+    	{
+    		"value": "3",
+			"default_value": "3",
+			"range": "1,2,3,4,5,8,10,12",
+			"data_type": "1"
+    	},
+    	"auto_key_update":
+    	{
+			"value": "2",
+            "default_value": "2",
+            "range": "0,1,2,3,16,17,18,19,32,33,34,35,48,49,50,51",
+            "data_type": "1"
+    	},
+    	"enroll_user_id":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0,1,2,4,5",
+			"data_type": "1"
+    	},
+    	"verify_user_id":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0:5",
+			"data_type": "1"
+    	},
+    	"wiegand_flag":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0:1",
+			"data_type": "1"
+    	},
+    	"overwrite_wiegand_flag":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0:1",
+			"data_type": "1"
+        },
+    	"hashing_enable":
+    	{
+			"value": "2368514",
+			"default_value": "2368514",
+			"range": "2368513,2368514,2105347,2367492",
+			"data_type": "1"
+    	},
+    	"support_l1_cards":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:1",
+			"data_type": "1"
+    	},
+    	"verify_csn_start":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:79",
+			"data_type": "1"
+    	},
+		"verify_csn_length":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:80",
+			"data_type": "1"
+    	},
+    	"enroll_csn_start":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:79",
+			"data_type": "1"
+    	},
+		"enroll_csn_length":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:80",
+			"data_type": "1"
+    	},
+    	"HID_card_number_format":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,2,3,4,5,6,10,11,12,13,14,15,16,17",
+            "data_type": "1"
+        }
+    },
+    "sc_binary_read":
+    {
+    	"data_format":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0:1",
+			"data_type": "1"
+    	},
+    	"data_offset_num_bytes":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0:4294967295",
+			"data_type": "1"
+    	},
+    	"data_offset_add_bits":
+    	{
+			"value": "0",
+			"default_value": "0",
+			"range": "0:4294967295",
+			"data_type": "1"
+    	},
+    	"data_length_num_bytes":
+    	{
+    		"value": "8",
+			"default_value": "8",
+			"range": "0:4294967295",
+			"data_type": "1"
+    	},
+    	"data_length_add_bits":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:4294967295",
+			"data_type": "1"
+    	},
+    	"data_type_format":
+    	{
+    		"value": "0",
+			"default_value": "0",
+			"range": "0:4294967295",
+			"data_type": "1"
+    	},
+		"data_type_direction":
+		{
+			"value": "1",
+			"default_value": "1",
+			"range": "0:4294967295",
+			"data_type": "1"
+		}
+    },
+    "in_channel":
+    {
+        "SSL_conn_mode":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0,1",
+                "data_type": "1"
+        },
+        "primary_port":
+        {
+                "value": "11010",
+                "default_value": "11010",
+                "range": "0:65535",
+                "data_type": "1"
+        },
+        "secondary_port":
+        {
+                "value": "11011",
+                "default_value": "11011",
+                "range": "0:65535",
+                "data_type": "1"
+        },
+        "profile_id":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0:1",
+                "data_type": "1"
+        }
+    },
+    "out_channel":
+    {
+        "profile_id":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0:1",
+                "data_type": "1"
+        }
+    },
+    "SSL_profile_0":
+    {
+        "name":
+        {
+                "value": "Profile_0",
+                "default_value": "Profile_0",
+                "range": "40",
+                "data_type": "6"
+        },
+        "protocol_version":
+        {
+                "value": "9",
+                "default_value": "9",
+                "range": "0,3,6,9,12,15",
+                "data_type": "1"
+        },
+        "cipher_list":
+        {
+                "value": "511",
+                "default_value": "511",
+                "range": "1:511",
+                "data_type": "1"
+        }
+    },
+    "SSL_profile_1":
+    {
+        "name":
+        {
+                "value": "Profile_1",
+                "default_value": "Profile_1",
+                "range": "40",
+                "data_type": "6"
+        },
+        "protocol_version":
+        {
+                "value": "9",
+                "default_value": "9",
+                "range": "0,3,6,9,12,15",
+                "data_type": "1"
+        },
+        "cipher_list":
+        {
+                "value": "511",
+                "default_value": "511",
+                "range": "1:511",
+                "data_type": "1"
+        }
+    },
+    "remote_msg_conf":
+    {
+    	"feedback_interface":
+    	{
+    	    "value": "0",
+            "default_value": "0",
+            "range": "0,1,3",
+            "data_type": "1"
+    	},
+    	"send_ethernet_state":
+    	{
+    	    "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+    	},
+    	"send_serial_state":
+    	{
+    	    "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+    	},
+    	"serial_reply_timeout":
+        {
+            "value": "5",
+            "default_value": "5",
+            "range": "0:3600",
+            "data_type": "1"
+        }
+    },
+    "remote_msg_ip_conf":
+    {
+        "mode":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0,1,2",
+                "data_type": "1"
+        },
+        "host_on_no_response":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0,1",
+                "data_type": "1"
+        },
+        "host_1_ip":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "40",
+            "data_type": "6"
+        },
+        "host_1_port":
+        {
+            "value": "11020",
+            "default_value": "11020",
+            "range": "1:65000",
+            "data_type": "1"
+        },
+        "host_1_timeout":
+        {
+            "value": "2000",
+            "default_value": "2000",
+            "range": "1:65000",
+            "data_type": "1"
+        },
+        "host_1_protocol":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,2",
+            "data_type": "1"
+        },
+        "host_2_ip":
+        {
+            "value": "",
+            "default_value": "",
+            "range": "40",
+            "data_type": "6"
+        },
+        "host_2_port":
+        {
+            "value": "11021",
+            "default_value": "11021",
+            "range": "1:65000",
+            "data_type": "1"
+        },
+        "host_2_timeout":
+        {
+            "value": "2000",
+            "default_value": "2000",
+            "range": "1:65000",
+            "data_type": "1"
+        },
+        "host_2_protocol":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1,2",
+            "data_type": "1"
+        }
+    },
+    "LCD_configuration":
+    {
+        "enable_azerty_kbd":
+        {
+    			"value": "0",
+                "default_value": "0",
+                "range": "0",
+                "data_type": "1"
+    	},
+        "low_power_disable_sensor":
+        {
+    			"value": "1",
+                "default_value": "1",
+                "range": "0,1",
+                "data_type": "1"
+    	},
+        "idle_screen_status":
+        {
+    			"value": "1",
+                "default_value": "1",
+                "range": "0,1",
+                "data_type": "1"
+    	},
+        "idle_screen_timeout":
+        {
+                "value": "60",
+                "default_value": "60",
+                "range": "1:3600",
+                "data_type": "1"
+        },
+        "idle_video_timeout":
+        {
+                "value": "60",
+                "default_value": "60",
+                "range": "60",
+                "data_type": "1"
+        },
+        "brightness":
+        {
+                "value": "70",
+                "default_value": "70",
+                "range": "5:100",
+                "data_type": "1"
+        },
+        "video_play_brightness":
+        {
+                "value": "35",
+                "default_value": "35",
+                "range": "35",
+                "data_type": "1"
+        },
+        "PIN_keypad_type":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        }
+    },
+    "Conf_duress_finger_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_fake_finger_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_user_control_successfull_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        }
+    },
+    "Conf_biometric_mismatch_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_PIN_mismatch_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_user_ID_not_in_database_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_control_timed_out_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_door_opened_for_too_long_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_rejected_by_schedule_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_user_temporal_validity_expired_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_user_not_in_white_list_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_black_listed_card_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_face_not_detected_event":
+    {
+        "event_settings":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_transaction_log_file_full_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_controller_feedback_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,16",
+                "data_type": "1"
+        }
+    },
+    "Conf_job_code_check_failure_event":
+    {
+        "event_settings":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_usr_rule_check_failure_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_forced_door_open_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_door_closed_after_alarm_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_door_unlocked_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_door_locked_back_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_management_menu_login_event":
+    {
+        "event_settings":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0",
+                "data_type": "1"
+        }
+    },
+    "Conf_management_menu_logout_event":
+    {
+        "event_settings":
+        {
+                "value": "0",
+                "default_value": "0",
+                "range": "0",
+                "data_type": "1"
+        }
+    },
+    "Conf_database_deleted_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_enrolment_completed_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_deletion_completed_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_user_modification_completed_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_contactless_card_encoded_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_contactless_card_reseted_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_settings_changed_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_contactless_security_keys_reseted_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_security_policy_changed_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_tamper_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "Conf_tamper_cleared_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,16",
+                "data_type": "1"
+        }
+    },
+    "Conf_terminal_boot_completed_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        }
+    },
+    "Conf_firmware_upgrade_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_add_user_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_reboot_initiated_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,8,16,24",
+                "data_type": "1"
+        }
+    },
+    "Conf_multi_user_intermediate_id_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,16",
+                "data_type": "1"
+        }
+    },
+    "Conf_triggers_blocked_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,16",
+                "data_type": "1"
+        }
+    },
+    "Conf_triggers_back_to_normal_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0,16",
+                "data_type": "1"
+        }
+    },
+    "Conf_timed_anti_passback_event":
+    {
+        "event_settings":
+        {
+                "value": "16",
+                "default_value": "16",
+                "range": "0:31",
+                "data_type": "1"
+        },
+        "clk_data_id":
+        {
+                "value": "65535",
+                "default_value": "65535",
+                "range": "24",
+                "data_type": "6"
+        }
+    },
+    "video_phone":
+    {
+    	"profiles":
+    	{
+            "value": "AA==",
+            "default_value": "AA==",
+            "range": "760",
+            "data_type": "5",
+            "repeat_default_value": "1"
+    	}
+    },
+    "face_detection":
+    {
+    	"timeout":
+    	{
+            "value": "3",
+            "default_value": "3",
+            "range": "3",
+            "data_type": "1"
+    	}
+    },
+    "success_message":
+    {
+    	"display_information":
+    	{
+            "value": "7",
+            "default_value": "7",
+            "range": "0:7",
+            "data_type": "1"
+    	}
+    },
+    "reject_message":
+    {
+    	"display_reason":
+    	{
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+    	}
+    },
+    "ucc":
+    {
+        "trigger_event":
+        {
+            "value": "3",
+            "default_value": "3",
+            "range": "0:15",
+            "data_type": "1"
+        },
+ 	    "trigger_event_TL1":
+        {
+            "value": "15",
+            "default_value": "15",
+            "range": "0:15",
+            "data_type": "1"
+        },
+       "trigger_event_TL2":
+        {
+            "value": "15",
+            "default_value": "15",
+            "range": "0:15",
+            "data_type": "1"
+        },
+       "trigger_event_TL3":
+        {
+            "value": "15",
+            "default_value": "15",
+            "range": "0:15",
+            "data_type": "1"
+        },
+		"user_record_reference":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+		"user_record_reference_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+		"user_record_reference_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "user_record_reference_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+		"per_user_rules":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+		"per_user_rules_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+		"per_user_rules_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+		"per_user_rules_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "check_additional_users":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_additional_users_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_additional_users_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_additional_users_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_record_fallback":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_record_fallback_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_record_fallback_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_record_fallback_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_biopin_user_rule":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "allow_biopin_user_rule_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "allow_biopin_user_rule_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "allow_biopin_user_rule_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:2",
+            "data_type": "1"
+        },
+        "allow_duress_finger":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_duress_finger_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_duress_finger_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_duress_finger_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_vip_auth_bypass":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_vip_auth_bypass_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_vip_auth_bypass_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_vip_auth_bypass_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "finger_bio_auth_rule":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "finger_bio_auth_rule_TL1":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "finger_bio_auth_rule_TL2":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "finger_bio_auth_rule_TL3":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "pin_auth_rule":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "pin_auth_rule_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "pin_auth_rule_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "pin_auth_rule_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "users_photo_policy":
+        {
+        	"value": "1",
+            "default_value": "1",
+            "range": "1",
+            "data_type": "1"
+        },
+        "face_auth_rule":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "face_auth_rule_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "face_auth_rule_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "face_auth_rule_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0",
+            "data_type": "1"
+        },
+        "check_user_id_whitelist":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_user_id_whitelist_TL1":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_user_id_whitelist_TL2":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_user_id_whitelist_TL3":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "enable_external_database":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_access_schedule":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_holiday_schedule":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_stolen_card_list":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_ID_fallback":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_missing_expiry_ref":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_missing_PIN_ref":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "check_expiry_date":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "allow_card_only_in_prox":
+        {
+            "value": "1",
+            "default_value": "1",
+            "range": "1",
+            "data_type": "1"
+        },
+        "enable_timed_anti_passback":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0,1",
+            "data_type": "1"
+        }
+    },
+    "MMI":
+    {
+        "USB_KO":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 0 199 0 0 0 0 1 223 250 0 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 0 199 0 0 0 0 1 223 250 0 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "USB_OK":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 1 199 0 0 0 0 1 3500 250 0 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 1 199 0 0 0 0 1 3500 250 0 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "USB_key_plugged_in":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 2 199 0 0 0 0 1 3500 250 0 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 2 199 0 0 0 0 1 3500 250 0 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "USB_default_IHM":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 3 200 0 100 100 0 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 3 200 0 100 100 0 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "first_boot_MMI":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 6 0 0 4 1 0 250 0 1 0 0 0 0 0 4 2 0 500 0 1 0 0 0 0 0 4 3 0 750 0 1 0 0 0 0 0 4 4 0 1000 0 1 0 0 0 0 0 4 5 0 1250 0 1 0 0 0 0 0 4 6 0 1500 0 1 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 6 0 0 4 1 0 250 0 1 0 0 0 0 0 4 2 0 500 0 1 0 0 0 0 0 4 3 0 750 0 1 0 0 0 0 0 4 4 0 1000 0 1 0 0 0 0 0 4 5 0 1250 0 1 0 0 0 0 0 4 6 0 1500 0 1 0 0 0 0 0",
+            "range": "200",
+            "data_type": "6"
+        },
+        "access_granted":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 5 199 0 1000 0 1 1 3500 100 0 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 5 199 0 1000 0 1 1 3500 100 0 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "access_denied":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 6 199 0 2000 0 1 1 223 500 500 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 6 199 0 2000 0 1 1 233 500 500 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "access_emergency":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 7 199 0 2000 0 1 1 223 500 500 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 7 199 0 2000 0 1 1 223 500 500 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "alarm":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 8 100 0 500 1500 15 1 223 500 1500 15",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 8 100 0 500 1500 15 1 223 500 1500 15",
+            "range": "100",
+            "data_type": "6"
+        },
+        "changekey_OK":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 9 198 0 100 500 4 1 3500 100 500 4",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 9 198 0 100 500 4 1 3500 100 500 4",
+            "range": "100",
+            "data_type": "6"
+        },
+        "changekey_KO":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 10 198 0 500 500 4 1 3500 100 500 4",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 10 198 0 500 500 4 1 3500 100 500 4",
+            "range": "100",
+            "data_type": "6"
+        },
+        "end_of_acq":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 11 199 0 0 0 0 1 3500 100 0 1",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 11 199 0 0 0 0 1 3500 100 0 1",
+            "range": "100",
+            "data_type": "6"
+        },
+        "async_mess":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 12 200 0 50 200 15 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 12 200 0 50 200 15 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "default_trigger":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 13 254 0 0 0 0 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 13 254 0 0 0 0 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "database_empty":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 14 253 0 100 1500 0 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 14 253 0 100 1500 0 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "default_ILV_status":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 15 200 0 1000 0 1 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 15 200 0 1000 0 1 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "ILV_in_prg":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 16 253 0 100 100 0 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 16 253 0 100 100 0 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "GPS_TOM_TOM":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 17 200 0 0 0 0 0 2097 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 17 200 0 0 0 0 0 2097 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "default_no_trigger":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 18 255 0 0 0 0 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 18 255 0 0 0 0 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "finger_only_trigger":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 19 254 0 0 0 0 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 19 254 0 0 0 0 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        },
+        "changefinger":
+        {
+            "value": "22 serialization::archive 9 0 0 0 0 1 0 0 20 199 0 600 0 1 0 0 0 0 0",
+            "default_value": "22 serialization::archive 9 0 0 0 0 1 0 0 20 199 0 600 0 1 0 0 0 0 0",
+            "range": "100",
+            "data_type": "6"
+        }
+    },
+    "rtc":
+    {
+        "triggers_block_state":
+        {
+            "value": "0",
+            "default_value": "0",
+            "range": "0:1",
+            "data_type": "1"
+        },
+        "triggers_block_period":
+        {
+            "value": "3600",
+            "default_value": "3600",
+            "range": "1:4294967295",
+            "data_type": "1"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<GetLogStatus>
+	<Request>
+		<Identifier>0x5D</Identifier>
+		<Values>
+			<LogBaseID size='1'>0x0</LogBaseID>
+		</Values>
+	</Request>
+	<Reply>
+		<Identifier>0x5D</Identifier>
+		<Length>10</Length>
+		<Values>
+			<RequestStatus size='1'>?</RequestStatus>
+			<LogEnabled size='1' def='dec'>?</LogEnabled>
+			<CurrentLine size='2' type='dec'>?</CurrentLine>
+			<MaxLine size='2' type='dec'>?</MaxLine>
+			<LineSize size='2' type='dec'>?</LineSize>
+			<BaseState>1</BaseState>
+			<Version>0x12</Version>
+		</Values>
+	</Reply>
+</GetLogStatus>

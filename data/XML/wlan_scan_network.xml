@@ -1,0 +1,42 @@
+<wlanScan>
+	
+	<Request>
+		<Identifier>0xE0</Identifier>
+	</Request>
+
+	<Reply>
+		<Identifier>0xE0</Identifier>
+		<Length>?</Length>
+		<Values>
+			<RequestStatus size="1" type="hex">0x00</RequestStatus>
+			<NetworkInfo>
+				<Identifier>0x01</Identifier>
+				<Length></Length>
+				<Values>
+					
+					<ssid>
+						<Identifier>0x02</Identifier>
+						<Values>
+							<networkssid></networkssid>
+						</Values>
+					</ssid>
+					
+					<bssid>
+						<Identifier>0x03</Identifier>
+						<Values>
+							<networkssid></networkssid>
+						</Values>
+					</bssid>
+					
+					<frequency size="2"></frequency>
+					
+					<SignalLevel size="2">0</SignalLevel>
+					
+					<EncryptionType size="1">0</EncryptionType>
+					
+				</Values>
+			</NetworkInfo>
+		</Values>
+	</Reply>
+
+</wlanScan>

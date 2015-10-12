@@ -1,0 +1,85 @@
+label,name_UTF8,first_name_UTF8,first_finger_qual,second_finger_qual,third_finger_qual,first_finger_nb,second_finger_nb,third_finger_nb,duress_finger_index,schedule_nb,PIN_code_UTF8,user_card_sn,apply_holiday_schedule,specific_relay_duration_in_sec,expiry_date,access_rule,white_list_flag,legacy_timemask,legacy_extended_id,additional_data,exp_error
+Valid name min,a,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid name max,abcdefghijklmnopqrstuvwxyzabcdefghijklmn,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid name large,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefg,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Invalid name blank,"""""",nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid name garbage,"!@#$%^&*()_+`-={}[]|\;:,.<>/?",nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid first name small,nil,z,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid first name large,nil,abcdefghijklmnopqrstuvwxy,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid first name large,nil,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefg,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Invalid first name blank,nil,"""""",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid first name garbage,nil,"!@#$%^&*)_+`-=}[|\;:,.>/?",nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid first finger qual min,nil,nil,0,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid first finger qual,nil,nil,-1,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid second finger qual mid,nil,nil,nil,50,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid second finger qual,nil,nil,nil,-1,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid third finger qual max,nil,nil,nil,nil,100,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid third finger qual,nil,nil,nil,nil,-1,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid first finger index min,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid first finger index,nil,nil,nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid second finger index mid,nil,nil,nil,nil,nil,1,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid second finger index,nil,nil,nil,nil,nil,1,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid third finger index max,nil,nil,nil,nil,nil,1,2,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid third finger index,nil,nil,nil,nil,nil,1,2,255,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid duress index min,nil,nil,nil,nil,nil,1,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid duress index max,nil,nil,nil,nil,nil,1,nil,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid duress index,nil,nil,nil,nil,nil,1,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid schedule index min,nil,nil,nil,nil,nil,1,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid schedule index max,nil,nil,nil,nil,nil,1,nil,nil,nil,61,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid schedule reserved,nil,nil,nil,nil,nil,1,nil,nil,nil,62,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid schedule upper,nil,nil,nil,nil,nil,1,nil,nil,nil,65,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid PIN min,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid PIN max,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,ab12cd34ef56,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid PIN characters,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,abcd,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid PIN numbers,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,12345678,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid PIN garbage,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,"!@#$%^&*()_+`-={}[]|\;:,.<>/?",nil,nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid user card sn min,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Valid user card sn max,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,1.00E+17,nil,nil,nil,nil,nil,nil,nil,nil,nil
+Invalid user card sn,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,"!@#$%^&*()_+`-={}[]|\;:,.<>/?",nil,nil,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid holiday schedule true,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,TRUE,nil,nil,nil,nil,nil,nil,nil,nil
+Valid holiday schedule false,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,FALSE,nil,nil,nil,nil,nil,nil,nil,nil
+Valid relay duration NA,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,0,nil,nil,nil,nil,nil,nil,nil
+Valid relay duration min,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil
+Valid relay duration max,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,300,nil,nil,nil,nil,nil,nil,nil
+Invalid relay duration,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,-1,nil,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid expiry date min,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,1980/01/01/ 00:00:00,nil,nil,nil,nil,nil,nil
+Valid expiry date max,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,2099/12/31/ 23:59:59,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Invalid expiry date range,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,9999/13/32/ 24:60:60,nil,nil,nil,nil,nil,Invalid_argument_error.new
+Valid access rule trigger check 1,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => true, :contactless => false, :keyboard => true, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => false),
+     :allow_bio_substitution => false)",nil,nil,nil,nil,nil
+Valid access rule trigger check 2,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => true, :keyboard => false, :external_port => true),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => false),
+     :allow_bio_substitution => false)",nil,nil,nil,nil,nil
+Valid access rule ref check 1,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => true, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => false),
+     :allow_bio_substitution => false)",nil,nil,nil,nil,nil
+Valid access rule ref check 2,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => true),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => false),
+     :allow_bio_substitution => false)",nil,nil,nil,nil,nil
+Valid access rule control check 1,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => true, :finger_bio_control => false),
+     :allow_bio_substitution => false)",nil,nil,nil,nil,nil
+Valid access rule control check 2,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => true),
+     :allow_bio_substitution => false)",nil,nil,nil,nil,nil
+Valid access rule allow bio sub,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => false, :contactless => false, :keyboard => false, :external_port => false),
+     :reference_check => User_rule_reference_check.new(:terminal => false, :smart_card => false),
+     :control_check => User_rule_control_check.new(:PIN_control => false, :finger_bio_control => false),
+     :allow_bio_substitution => true)",nil,nil,nil,nil,nil
+Valid access rule all true,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,"User_access_rule.new(:trigger_check => User_rule_trigger_check.new(:finger_bio => true, :contactless => true, :keyboard => true, :external_port => true),
+     :reference_check => User_rule_reference_check.new(:terminal => true, :smart_card => true),
+     :control_check => User_rule_control_check.new(:PIN_control => true, :finger_bio_control => true),
+     :allow_bio_substitution => true)",nil,nil,nil,nil,nil
+Valid white list flag true,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,TRUE,nil,nil,nil,nil
+Valid white list flag false,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,FALSE,nil,nil,nil,nil
+Valid legacy timemask,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0xFFFFFFFF,nil,nil,nil
+Valid legacy ext id,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1.34E+154,nil,nil
+Valid additional data small,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0x01,nil
+Valid additional data large,nil,nil,nil,nil,nil,1,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,0xFFBBAA112233DDEE3355762355476587694235235349826520934562930859230865924369582374908267598062BBA234234235643ABCDEF234234FF4654768980990078573411,nil

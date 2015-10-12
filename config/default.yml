@@ -1,0 +1,181 @@
+Communication:
+  IPAddress:             10.102.1.149
+  TCPPort:               11010                      #10001 for 4G device, 11010 for MA500/MA1000 terminal
+  ComPort:               24
+  BaudRate:              115200
+
+MA1000Terminal1:
+  TerminalFirmware:      MA2.0.2                   #Terminal Firmware Version (terminal_get_version, terminal_get_info)
+  SensorFirmware:        ""                        #Sensor Firmware Version (terminal_get_version)
+  ProductType:           MA SIGMA Lite+ iClass WR             #Product type (terminal_get_info)
+  ProductName:           MA SIGMA Lite+ iClass WR         #Product name (terminal_get_info)
+  SensorType:            Cbi                       #Sensor type (terminal_get_info)
+  FiveInchScreen:        true                      #Is five inch screen supported (terminal_get_info)
+  WiFiPlugged:           false                     #true if WiFi dongle is plugged, otherwise false (terminal_retrieve_peripherals)
+  TerminalPkgPartNo:     999999993                 #Product_info::terminal_packaged_part_number_UTF8 (product_get_info) 
+  TerminalPkgSrNo:       56789123            #Product_info::terminal_packaged_serial_number_UTF8 (product_get_info)
+  TerminalPkgCommName:   MA Lite Multi             #Product_info::terminal_packaged_comm_name_UTF8 (product_get_info)
+  SensorPkgPartNo:       293667795                 #Product_info::sensor_packaged_part_number_UTF8 (product_get_info)
+  SensorPkgSrNo:         1310S014381               #Product_info::sensor_packaged_serial_number_UTF8 (product_get_info)
+  SpecificPartNo:        ""                        #Product_info::specific_part_number_UTF8 (product_get_info)
+  LicenseIdentifier:     293667521-0-04268579556   #Product_info::license_identifier_UTF8 (product_get_info)
+  LicenseName:           MIMA; VERIF; BCL; MA_TA; MA_WIFI; MA_ADP_V;  #Product_info::license_name_UTF8 (product_get_info)
+  MACEthernet:           00:24:AE:00:B1:0D         #Product_info::mac_address_ethernet_UTF8 (product_get_info)
+  MACWiFi:               5C:F3:70:03:3D:CC                        #Product_info::mac_address_wifi_UTF8 (product_get_info)
+
+MA500Protocol:
+  MorphoAccessType:      100                        #Terminal's Morpho access type
+  SerialNo:              56789123                  #Terminal's serial number (ID_TERMINAL_IDENTIFIER [0x01], ID_BIO_TERMINAL_DESCRIPTION [0x06])
+  PlatformType:          0x00                       #Hardcoded value in MA500 mode
+  MACIVersion:           687931392                  #Hardcoded value in MA500 mode
+  KeyboardType:          0x00                       #Hardcoded value in MA500 mode
+  ScreenType:            0x00                       #Hardcoded value in MA500 mode
+  BuzzerType:            0x00                       #Hardcoded value in MA500 mode
+  ReceiveBufferSize:     2048000                    #ILV receipt buffer size (ID_TERMINAL_IDENTIFIER [0x01])
+  SendBufferSize:        512000                     #ILV sender buffer size (ID_TERMINAL_IDENTIFIER [0x01])
+  PeripheralsMask:       0xf7deb                   #Peripherals mask (ID_BIN_PERIPH [0x07])
+  ExtendedMemory:        0                          #Hardcoded value in MA500 mode
+  ReaderType:            0x02                       #Contactless card reader type (ID_CLSS_IDENTIFIER [0x03])
+                                                    # 0x00 = NONE
+                                                    # 0x01 = MIFARE
+                                                    # 0x02 = HID
+  ReaderVersion:         0                          #Contactless card reader version (ID_CLSS_IDENTIFIER [0x03])
+  AppName:               MACCESS                    #Application name (ID_BIO_APPLICATION_INFORMATION [0x05])
+  MaxRecords:            3000                      #Maximum number of user records database capacity
+  AppVersion:            "0110"                     #Application version (ID_BIO_APPLICATION_INFORMATION [0x05])
+  AppComment:            Access Control Application #Application comment (ID_BIO_APPLICATION_INFORMATION [0x05])
+  SensorNoBases:         1                          #Number of bases (part of ID_FORMAT_BIN_NB_BASE [0x76] in ID_BIO_SENSOR_IDENTIFIER [0x02])
+  SensorUsersPerBase:    3000                      #Number of users per base (part of ID_FORMAT_BIN_MAX_USER [0x75] in ID_BIO_SENSOR_IDENTIFIER [0x02])
+  ProductNo:             293667807                  #Terminal's product number (ID_BIO_TERMINAL_DESCRIPTION [0x06])           
+
+L1Device1:
+  SubnetMask:            255.255.252.0          
+  Gateway:               10.102.1.1              
+  StoredIPAddress:       192.168.1.1 #10.102.11.131              #Get Stored IPAddress by throwing command 0x80A(GET_IP_ADDRESS)
+  WiFiDHCPIPAddress:     10.102.2.47                #Get Stored IPAddress by throwing command 0x80A(GET_IP_ADDRESS)
+  WiFiStaticIPAddress:   10.102.0.14                #Get Stored IPAddress by throwing command 0x80A(GET_IP_ADDRESS)
+  WLANStatus:            1                          #Get status of Wlan which is connected or not by throwing command 0x8A0(DETECT_WLAN)
+  ESSID:                 MASIGMA                    #Set,Get and Reset ESSID of WLAN Network by throwing command 0x9DE(CONFIGURE_EXTENDED_WLAN_SETTING)
+  EncryptionKey:         abcdefgh                 #Set,Get and Reset Encryption Key of WLAN Network by throwing command 0x9DE(CONFIGURE_EXTENDED_WLAN_SETTING)
+  RouterMACAddress:      00:18:f8:f8:f5:2b          #Get MAC address of WLAN Network by throwing command 0x9DE(CONFIGURE_EXTENDED_WLAN_SETTING)
+  EthernetMACAddress:    00:24:ae:00:B1:0D        
+  WLANMACAddress:        5C:f3:70:03:3d:cc          #Get MAC address of WLAN Access Point by throwing command (GET_NW_MAC 0x08C5)
+  CurrentConfigComport:  11                         #IO channel from which request is arrived eg: eth=11 ,Rs232=0,AuxPort=1,Rs485=13
+  DeviceSerialNumber:    56789123             #Serial No of Device
+  MaskVersion:           MA2.0.2                 #Get value by throwing command 0x8E0(GET_COMPONENT_VERSION)
+  MajorVersion:          M01.0                      #Get value by throwing command 0x8E0(GET_COMPONENT_VERSION)
+  MinorVersion:          N00.1                      #Get value by throwing command 0x8E0(GET_COMPONENT_VERSION)
+  FirmwareVersion:       K04.3                      #Get value by throwing command 0x8E0(GET_COMPONENT_VERSION)  
+  FPGAVerision:          C05.0                      #Get value by throwing command 0x8E0(GET_COMPONENT_VERSION)
+  LCDGUIVersion:         L03.0                      #Get value by throwing command 0x8E0(GET_COMPONENT_VERSION)
+  KernalVersion:         K2.0022                    #Get value by throwing command 0x0302(MV11_VERSION) 
+  AlgorithmVersion:      A3.0033                    #Get value by throwing command 0x0302(MV11_VERSION)
+  DeviceComparison:      1                          #Get value by throwing command 0x04D4(GET_DEVICE_TYPE) 
+                                                    #eg: 1:1 verification = 0,1:1verification and Identification =1
+  DeviceType:            1020                       #Get value by throwing command 0x04D4(GET_DEVICE_TYPE)
+  ExtendedIdMode:        0                          #Get value by throwing command 0x0706(GET_UNIT_INFO) eg,off=0,on=1
+  VeriPortMode:          0xffffffff                 #Get value by throwing command 0x0706(GET_UNIT_INFO) eg, possible value 0,1,2,-1
+  TemplateType:          6                          #Get value by throwing command 0x0706(GET_UNIT_INFO)
+                                                    # 0 = User Records(VUR)
+                                                    # 1 = 348 byte Templates(TEM)
+                                                    # 3 = 1:500 Searching Templates(TMS)
+                                                    # 4 = 1:200 Searching Templates(MTM)
+                                                    # 5 = 1:1 Universal Template(1:1 BUR)
+                                                    # 6 = 1: N Universal Templates(1:N BUR)#Get value by throwing command 0x0706(GET_UNIT_INFO) 
+
+  TemplateMode:          10                         #Get value by throwing command 0x0706(GET_UNIT_INFO)
+                                                    #BURSearchType: Valid only for 1:N BUR.
+                                                    # 1 = 1K search mode (Finger Vein Product only)
+                                                    # 10 = 10K search mode
+                                                    # 50 = 50K search mode 
+  UserRecord:            2                          #Get value by throwing command 0x0706(GET_UNIT_INFO) eg:-1:1 small VUR =1 ,Rest template type =2   
+  TemplateOnDevice:      0                          #Get stored no of template on device by throwing command 0x0706(GET_UNIT_INFO) 
+  MaximumTemplate:       10000                     #Get maximum no of template supported on device by throwing command 0x0706(GET_UNIT_INFO)
+  SerialPortType:        0                          #Get value by throwing command 0x0706(GET_UNIT_INFO) eg:-Rs232=0 ,Rs485 =1
+  AuxFlag:               1                          #Returns the state of enable or disable AUX Input Port by throwing 0x42D command 
+                                                    #eg:- disable =0,enable =1
+  WiegandFlag:           1                          #Returns the state of enable or disable AUX Input Port by throwing 0x42D command 
+                                                    #eg:- disable =0,enable =1
+  DhcpMode:              1                          #Returns the state of enable or disable DHCP throwing 0x42D command 
+                                                    #eg:- disable =0,enable =1
+  DchrgTime:             0                          #used For Veridicom Sensor Only and by throwing command 0x0706(GET_UNIT_INFO) DataField = 52
+  DchrgCurrent:          0                          #used For Veridicom Sensor Only and by throwing command 0x0706(GET_UNIT_INFO) DataField = 53
+  SensorType:            1001                       #Get SensorType by throwing command 0x0706(GET_UNIT_INFO) DataField = 54
+  XPosition:             256                        #Get x-postion by throwing command 0x0706(GET_UNIT_INFO) DataField = 55 
+  YPosition:             400                        #Get y-postion by throwing command 0x0706(GET_UNIT_INFO) DataField = 56
+  CardID:                235                        #Get card id by throwing command 0x0472(GET_WIEGAND_ID)
+  SiteCode:              54                         #Each card has own site-code
+  WiegandLength:         64                         #Wiegand String Length
+  SmartcardSerialNo:     91895500FBFF12E0           #FC7C5500FBFF12E0  #2A104A00F6FF12E0 #AF624C00000000             #Smartcard serial number
+  IclassAppArea:         16                         #Iclass Smartcard Application area
+  MifareCardType:        1                          #Mifare Smartcard type eg: 0-1K Mifare, 1-4kMifare
+
+TDriver:
+  SUTID:                 sut_qt_local
+  AppName:               MALite_GUI
+
+SupportedDevice:
+  IPAddress:             10.102.2.167
+  TCPPort:               10001          
+  ComPort:               24
+  BaudRate:              115200
+
+ContactlessCard:
+  StandardSerialNumber:          1185782524026240	 #1375525995356816  #1255074425085056 #af624c#2df45bee                 # Standard Serial number of contactless card placed on reader
+  ReverseSerialNumber:           36060822483908100                                 # Reverse Serial number of contactless card
+  4GCardSerialNumber:            8518000145413775490                               # 4G Serial number of contactless card
+  HIDCardSerialNumber:           42918                                             # HID card number of contactless card  
+
+License:
+  MA_10K_USERS:          "293667521-0-04268579556 MA_10K_USERS D1E740C28FCC3D5D59DC6F77FE9DAF2A778BB31643CCBAAF43B97603E3B86CB280 64#"   #MA1000 10K user license
+  MA_1M_LOGS:            "293667521-0-04268579556 MA_1M_LOGS 498066676ABAF635317A9F423A1278BD8E5E5F2BE2C14DC51EE82BD9E48CDC5E80 64#"     #MA1000 1M logs license
+  MA_PAC:                "293667521-0-04268579556 MA_PAC 61DA40AF6B8408CBECF707FD3B61DE3602F3907EA05B3AF980 64#"         #MA1000 pac license
+  MA_TA:                 "293667521-0-04268579556 MA_TA ABB1701248EDD3DF5E273CFFC41B2740279634B7A0DFC12080 64#"          #MA1000 Time and Attentance license
+  MA_WIFI:               "293667521-0-04268579556 MA_WIFI 9FD93F75D3E0A6776F42F59AD760F6707704F5D8D2E2689280 64#"        #MA1000 WIFI license
+  MIMA:                  "293667521-0-04268579556 MIMA 4691847F6E9751473AF2F49374935CDADBE9F455037D6B4380 64#"           #MA1000 MIMA license
+  VERIF:                 "293667521-0-04268579556 VERIF 1D70A2E5DB9F8C548E009B4DA1B5836C80549C766C886F6C80 64#"          #MA1000 VERIF license
+  BCL:                   "293667521-0-04268579556 BCL 2609F297EDF6A48017FB543ED31F581BFD865C46BE16CD8F80 64#"            #MA1000 BCL license
+  ADP:                   "293667521-0-04268579556 MA_ADP_V 41B503093E64DF2E8FDE8B7C7E565196D048EB9FD172A86B16223A454803202480 64#"  #MA1000 ADP license
+
+MechanicalArmController:
+  ComPort:               4                            #Serial COM port where mechanical arm controller is connected
+
+FingerSimulationConfig:
+  SimuFilesPath:         /rootfs_data/simu/       #/media/mmcblk0p1/SimuFiles/   #Simulation RAW files path accessible from terminal 
+                                                       #For E.g./media/usb/DataSimuFinger/ or /rootfs_data/simu/ 
+
+WiFiRouter:
+  SSID:                  MASIGMA                             #ESSID of WiFi router
+  EncryptionType:        WIFI_encryption_type::Enc_wpa2_psk  #Security type of WiFi router : Enc_none,Enc_wep,Enc_wpa_psk,Enc_wpa2_psk
+  EncryptionKey:         1122334455                          #Security key of WiFi router
+  MACAddress:            5C:F3:70:03:3D:CC                   #MAC address of WiFi router
+
+Network:                                                    
+  StaticIPv4:            10.102.2.250                 #For configuring eth Static IPv4 address
+  GatewayIPv4:           10.102.1.1
+  SubnetMaskIPv4:        255.255.252.0
+
+SSL:
+  cert_file:             ssl_client.pem    #SSL client certificate in .pem file format          
+  port:                  11011             #SSL port number configured on terminal (in_channel.secondary_port)
+  ssl_ver:               SSLv23            #SSL protocol version configured on terminal (SSL_profile_x.protocol_version) E.g SSLv23, SSLv2, SSLv3, TLSv1
+  cipher:                AES128-SHA        #Cipher used to connect terminal  
+                                           #bit 0 - AES128-SHA 
+                                           #bit 1 - AES256-SHA
+                                           #bit 2 - AES128-SHA256 
+                                           #bit 3 - AES256-SHA256 
+                                           #bit 4 - AES128-GCM-SHA256 
+                                           #bit 5 - ECDHE-ECDSA-AES256-SHA 
+                                           #bit 6 - ECDHE-ECDSA-AES128-GCM-SHA256 
+                                           #bit 7 - ECDHE-ECDSA-AES128-SHA256 
+                                           #bit 8 - ECDHE-ECDSA-AES128-SHA
+
+TDRIVER:
+  EthernetIPv4DHCP:      10.102.3.217              
+  EthernetIPv6:          fe80::894c:bd17:c081:1234
+  WLANIPv4DHCP:          10.102.2.47
+  SubnetMaskIPv4:        255.255.252.0                
+  GatewayIPv4:           10.102.1.1
+  PrefixLength:          12
+  WIFIEnctype:           WPA2-PSK
+

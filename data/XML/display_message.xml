@@ -1,0 +1,18 @@
+<CMD_DISPLAY_SCREEN>
+	<Request>
+		<Identifier>0x54</Identifier>
+		<Values>
+			<X>40</X>
+			<Y>25</Y>
+			<Timeout>10</Timeout>
+			<Message type="str">eInfochips!</Message>
+		</Values> 
+	</Request>
+	<Reply>
+		<Identifier>0x54</Identifier>
+			<Length>1</Length>
+			<Values> 
+				<RequestStatus size="1">0</RequestStatus>
+			</Values>
+	</Reply>
+</CMD_DISPLAY_SCREEN>

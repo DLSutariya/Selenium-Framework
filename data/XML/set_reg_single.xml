@@ -1,0 +1,16 @@
+<SetRegistryKey>
+	<Request>
+		<Identifier>0x0b</Identifier>
+		<Values>
+			<ParamKey type='str'>reg_path</ParamKey>
+		</Values>
+	</Request>
+	<Reply>
+		<Identifier>0x0b</Identifier>
+		<Length>2</Length>
+		<Values>
+			<RequestStatus size='1'>res</RequestStatus>
+			<ParamResult size='1'>res</ParamResult>
+		</Values>
+	</Reply>
+</SetRegistryKey>

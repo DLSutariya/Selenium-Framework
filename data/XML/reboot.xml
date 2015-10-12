@@ -1,0 +1,12 @@
+<Reboot>
+	<Request>
+		<Identifier>0x04</Identifier>
+	</Request>
+	<Reply>
+		<Identifier>0x04</Identifier>
+			<Length>1</Length>
+			<Values> 
+				<RequestStatus size="1">0</RequestStatus>
+			</Values>
+	</Reply>
+</Reboot>

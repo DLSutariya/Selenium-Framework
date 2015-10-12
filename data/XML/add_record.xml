@@ -1,0 +1,17 @@
+<AddDBRecord>
+	<Request>
+	<Identifier>0x35</Identifier>
+		<Values> 
+			<Dbid size="1">0</Dbid>						
+		</Values>			
+	</Request>
+	<Reply>
+		<Identifier>0x35</Identifier>
+			<Length>?</Length>
+			<Values> 
+				<RequestStatus size="1">0x00</RequestStatus>
+				<BaseStatus size="1">0</BaseStatus>				
+				<UserDBIndex size="4">0</UserDBIndex>
+			</Values>
+	</Reply>
+</AddDBRecord>

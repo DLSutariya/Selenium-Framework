@@ -1,0 +1,16 @@
+<Ping>
+	<Request>
+		<Identifier>0x8</Identifier>
+		<Values>
+			<DataCheck size="1">0xab</DataCheck>
+		</Values> 
+	</Request>
+	<Reply>
+		<Identifier>0x08</Identifier>
+			<Length>2</Length>
+			<Values> 
+				<RequestStatus size="1">0</RequestStatus>
+				<DataCheck size="1">0xab</DataCheck>
+			</Values>
+	</Reply>
+</Ping>

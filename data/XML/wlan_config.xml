@@ -1,0 +1,27 @@
+<WlanConfigure>	
+	<Request>
+		<Identifier>0xE1</Identifier>
+		<Values>
+			       <ssid>
+                      <Identifier>0x02</Identifier>
+                      <Values>
+                        <networkssid>0x0</networkssid>
+                      </Values>
+                    </ssid>
+                    <EncryptionType size='1'>0x03</EncryptionType>
+                    <EncryptionKey>
+                      <Identifier>0x04</Identifier>
+                      <Values>
+                        <encryptionkey>0</encryptionkey>
+                      </Values>
+                    </EncryptionKey>
+		</Values>
+	</Request>
+	<Reply>
+		<Identifier>0xE1</Identifier>
+		<Length>?</Length>
+		<Values>
+			<RequestStatus size="1" type="hex">0x00</RequestStatus>
+		</Values>
+	</Reply>
+</WlanConfigure>

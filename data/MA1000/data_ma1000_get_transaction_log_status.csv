@@ -1,0 +1,14 @@
+label,action_status,strt_time,end_time,user_id,filter_type,log_action,exp_total_logs_count
+log-all filter without paramater,nil,nil,nil,nil,Transaction_log_filter_type::All,Transaction_log_action_code::Tlac_user_modification_completed,22
+log-all filter with only usr_cntrl,Transaction_log_action_status::Action_fail,nil,nil,nil,Transaction_log_filter_type::All,Transaction_log_action_code::Tlac_user_modification_completed,22
+log-all filter with only date,nil,31-12-2010 12:00,31-12-2010 12:00,nil,Transaction_log_filter_type::All,Transaction_log_action_code::Tlac_user_modification_completed,22
+log-all filter with only user id,nil,nil,nil,1,Transaction_log_filter_type::All,Transaction_log_action_code::Tlac_user_modification_completed,22
+log-all filter with all,Transaction_log_action_status::Action_fail,31-12-2010 12:00,31-12-2010 12:00,2,Transaction_log_filter_type::All,Transaction_log_action_code::Tlac_user_modification_completed,22
+log-filter with action status fail,Transaction_log_action_status::Action_fail,31-12-2010 12:00,31-12-2010 12:00,3,Transaction_log_filter_type::Action_status,Transaction_log_action_code::Tlac_user_modification_completed,1
+log-filter with action status pass,Transaction_log_action_status::Action_pass,31-12-2010 12:00,31-12-2010 12:00,4,Transaction_log_filter_type::Action_status,Transaction_log_action_code::Tlac_user_modification_completed,21
+log-filter with date time none,Transaction_log_action_status::Action_fail,01-01-2013 12:00,19-01-2013 12:00,5,Transaction_log_filter_type::Date_time,Transaction_log_action_code::Tlac_user_modification_completed,0
+log-filter with date time all,Transaction_log_action_status::Action_fail,01-01-2013 12:00,19-01-2015 12:00,6,Transaction_log_filter_type::Date_time,Transaction_log_action_code::Tlac_user_modification_completed,0
+log-filter with userid failed,Transaction_log_action_status::Action_fail,31-12-2010 12:00,31-12-2010 12:00,234,Transaction_log_filter_type::User_id,Transaction_log_action_code::Tlac_user_modification_completed,1
+log-filter with userid passed,Transaction_log_action_status::Action_fail,31-12-2010 12:00,31-12-2010 12:00,235,Transaction_log_filter_type::User_id,Transaction_log_action_code::Tlac_user_modification_completed,1
+log-filter with log action 1,Transaction_log_action_status::Action_fail,31-12-2010 12:00,31-12-2010 12:00,235,Transaction_log_filter_type::Log_action,Transaction_log_action_code::Tlac_user_modification_completed,1
+log-filter with log action 2,Transaction_log_action_status::Action_fail,31-12-2010 12:00,31-12-2010 12:00,235,Transaction_log_filter_type::Log_action,Transaction_log_action_code::Tlac_user_modification_completed,1
