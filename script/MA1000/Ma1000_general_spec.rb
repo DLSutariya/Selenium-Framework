@@ -2,6 +2,7 @@ require 'rspec'
 require 'selenium-webdriver'
 require_relative '../../lib/base_test'
 
+
 describe 'Terminal Information' do
 
   before(:each) do
